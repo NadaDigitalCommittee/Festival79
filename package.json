@@ -13,8 +13,10 @@
         "prepare": "husky"
     },
     "lint-staged": {
-        "*.{js,mjs,ts,tsx,json}": [
-            "prettier --write",
+        "*": [
+            "prettier --write --ignore-unknown"
+        ],
+        "*.{js,mjs,ts,tsx}": [
             "eslint"
         ]
     },
@@ -44,6 +46,7 @@
         "postcss": "8.5.1",
         "prettier": "3.4.2",
         "prettier-plugin-tailwindcss": "^0.6.11",
+        "prettier-plugin-toml": "^2.0.1",
         "tailwindcss": "3.4.17",
         "typescript": "5.7.3",
         "typescript-eslint": "^8.23.0",
