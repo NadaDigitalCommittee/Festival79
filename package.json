@@ -10,8 +10,6 @@
         "preview": "bun pages:build && wrangler pages dev",
         "deploy": "bun pages:build && wrangler pages deploy",
         "cf-typegen": "wrangler types --env-interface CloudflareEnv env.d.ts",
-        "lint-staged": "lint-staged",
-        "tsc": "tsc",
         "prepare": "husky"
     },
     "lint-staged": {
