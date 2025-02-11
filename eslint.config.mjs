@@ -65,7 +65,7 @@ export default tseslint.config(
     },
     ...new FlatCompat({
         baseDirectory: import.meta.dirname,
-    }).extends("next/core-web-vitals", "next/typescript"),
+    }).extends("next/core-web-vitals"),
     reactPlugin.configs.flat.recommended,
     reactPlugin.configs.flat["jsx-runtime"],
     {
