@@ -31,6 +31,7 @@
         "@cloudflare/workers-types": "^4.20250311.0",
         "@eslint/eslintrc": "^3.3.0",
         "@eslint/js": "^9.22.0",
+        "@svgr/webpack": "^8.1.0",
         "@trivago/prettier-plugin-sort-imports": "^5.2.2",
         "@types/bun": "^1.2.5",
         "@types/react": "^19.0.10",
