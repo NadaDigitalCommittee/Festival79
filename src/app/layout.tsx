@@ -3,7 +3,7 @@ import { Geist_Mono } from "next/font/google"
 
 import "./globals.css"
 
-import { Footer } from "@/components/Footer"
+// import { Footer } from "@/components/Footer"
 
 const geistMono = Geist_Mono({
     weight: "variable",
@@ -22,7 +22,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         <html lang="en">
             <body className={`${geistMono.className} antialiased`}>
                 {children}
-                <Footer />
+                {/* <Footer /> */}
             </body>
         </html>
     )
