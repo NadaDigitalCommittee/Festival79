@@ -30,6 +30,7 @@ export default {
             },
             fontFamily: {
                 body: "var(--font-montserrat), var(--font-bizudpgothic)",
+                date: "var(--font-ptsansnarrow)",
             },
             keyframes: {
                 logo: {

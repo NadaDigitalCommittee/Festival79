@@ -1,5 +1,5 @@
 import type { Metadata } from "next"
-import { BIZ_UDPGothic, Montserrat } from "next/font/google"
+import { BIZ_UDPGothic, Montserrat, PT_Sans_Narrow } from "next/font/google"
 
 import "./globals.css"
 
@@ -22,6 +22,13 @@ const bizUdpGothic = BIZ_UDPGothic({
     variable: "--font-bizudpgothic",
 })
 
+const ptSansNarrow = PT_Sans_Narrow({
+    weight: "400",
+    display: "swap",
+    subsets: ["latin"],
+    variable: "--font-ptsansnarrow",
+})
+
 export const metadata: Metadata = {
     title: "第79回灘校文化祭 weave",
     description:
@@ -32,7 +39,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
     return (
         <html lang="ja">
             <body
-                className={`${montserrat.variable} ${bizUdpGothic.variable} flex flex-col gap-10 font-body antialiased`}
+                className={`${montserrat.variable} ${bizUdpGothic.variable} ${ptSansNarrow.variable} flex flex-col gap-10 font-body antialiased`}
             >
                 <Header />
                 {children}
