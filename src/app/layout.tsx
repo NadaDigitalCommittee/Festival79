@@ -5,6 +5,8 @@ import "./globals.css"
 
 import { Footer } from "@/components/Footer"
 
+// import { Footer } from "@/components/Footer"
+
 const montserrat = Montserrat({
     weight: "variable",
     display: "swap",
