@@ -13,12 +13,12 @@ export default function Home() {
             </div>
             <div className="col-start-1 col-end-2 md:col-start-2 md:col-end-3">
                 <div className="flex size-full flex-col justify-center gap-4">
-                    <h1 className="break-keep p-2 text-5xl font-bold dark:text-theme">
+                    <h1 className="text-primary break-keep p-2 text-5xl font-bold dark:text-theme">
                         第79回 <wbr />
                         灘校文化祭
                     </h1>
-                    <WeaveLogotype className="max-w-80 pl-2 text-zinc-900 dark:text-[#dad8e5]" />
-                    <section className="pt-4 text-xl leading-10 text-[#414145] dark:text-[#c2c0cf]">
+                    <WeaveLogotype className="max-w-80 pl-2 text-theme dark:text-dark-primary" />
+                    <section className="pt-4 text-xl leading-10 text-light-secondary dark:text-dark-secondary">
                         <p>「weave」には、「織り成す」という意味があります。</p>
                         <p>
                             灘校生の熱中するものへの思いや努力それぞれを一本一本の糸にたとえ、灘校文化祭の数多くの場面でその糸を織り成し、華々しく表現してほしい。
@@ -28,27 +28,29 @@ export default function Home() {
                 </div>
             </div>
             <div className="col-start-1 col-end-2 flex flex-col justify-between rounded-2xl p-6 dark:bg-zinc-700">
-                <h2 className="flex h-16 flex-row dark:text-[#dad8e5]">
+                <h2 className="flex h-16 flex-row dark:text-dark-primary">
                     <HiCalendarDateRange className="mx-2 my-auto text-4xl" />
                     <div className="my-auto text-3xl font-bold">開催日時</div>
                 </h2>
-                <span className="flex items-center gap-3 text-3xl font-bold dark:text-[#c2c0cf]">
+                <span className="flex items-center gap-3 text-3xl font-bold dark:text-dark-secondary">
                     <span className="text-4xl">5/2</span> ~<span className="text-4xl">5/3</span>
                 </span>
                 <div className="flex flex-col gap-8">
                     <div className="flex items-center gap-8">
-                        <span className="text-2xl font-bold dark:text-[#c2c0cf]">1日目</span>
-                        <span className="text-4xl dark:text-[#c2c0cf]">9:00 ~ XX:XX</span>
+                        <span className="text-2xl font-bold dark:text-dark-secondary">1日目</span>
+                        <span className="text-4xl dark:text-dark-secondary">9:00 ~ XX:XX</span>
                     </div>
                     <div className="flex items-center gap-8">
-                        <span className="text-2xl font-bold dark:text-[#c2c0cf]">2日目</span>
-                        <span className="text-4xl dark:text-[#c2c0cf]">9:00 ~ XX:XX</span>
+                        <span className="text-2xl font-bold dark:text-dark-secondary">2日目</span>
+                        <span className="text-4xl dark:text-dark-secondary">9:00 ~ XX:XX</span>
                     </div>
-                    <span className="dark:text-[#c2c0cf]">※開場時間前の来場はご遠慮ください</span>
+                    <span className="dark:text-dark-secondary">
+                        ※開場時間前の来場はご遠慮ください
+                    </span>
                 </div>
             </div>
             <div className="col-start-1 col-end-2 flex flex-col rounded-2xl p-6 md:col-start-2 md:col-end-3 dark:bg-zinc-700">
-                <h2 className="flex h-16 flex-row dark:text-[#dad8e5]">
+                <h2 className="flex h-16 flex-row dark:text-dark-primary">
                     <HiMapPin className="mx-2 my-auto text-4xl" />
                     <div className="my-auto text-3xl font-bold">アクセス</div>
                 </h2>
@@ -63,10 +65,10 @@ export default function Home() {
                         ></iframe>
                     </div>
                 </div>
-                <h3 className="p-2 text-2xl text-[#414145] dark:text-[#c2c0cf]">
+                <h3 className="p-2 text-2xl text-light-secondary dark:text-dark-secondary">
                     灘中学校・灘高等学校
                 </h3>
-                <p className="ml-2 text-[#414145] dark:text-[#c2c0cf]">
+                <p className="ml-2 text-light-secondary dark:text-dark-secondary">
                     兵庫県神戸市 東灘区 魚崎北町8丁目5番1号
                 </p>
             </div>

@@ -15,11 +15,15 @@ export default {
                 light: {
                     primary: "#000000",
                     secondary: "#414145",
+
+                    background: "#ffffff",
                 },
 
                 dark: {
                     primary: "#dad8e5",
                     secondary: "#c2c0cf",
+
+                    background: "#27272a",
 
                     muted: "#3f3f46",
                 },
