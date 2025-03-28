@@ -13,7 +13,7 @@ export default function Home() {
             </div>
             <div className="col-start-1 col-end-2 md:col-start-2 md:col-end-3">
                 <div className="flex size-full flex-col justify-center gap-4">
-                    <h1 className="text-primary break-keep p-2 text-5xl font-bold dark:text-theme">
+                    <h1 className="break-keep p-2 text-5xl font-bold text-light-primary dark:text-theme">
                         第79回 <wbr />
                         灘校文化祭
                     </h1>
