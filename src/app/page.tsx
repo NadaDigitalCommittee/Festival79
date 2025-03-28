@@ -16,9 +16,7 @@ export default function Home() {
                         第79回 <wbr />
                         灘校文化祭
                     </span>
-                    <span className="text-5xl font-bold text-theme dark:text-dark-primary">
-                        WEAVE
-                    </span>
+                    <span className="text-5xl font-bold text-theme dark:text-theme">WEAVE</span>
                     <span className="text-4xl font-bold dark:text-dark-primary">
                         生徒全員で織り上げる作品
                     </span>
