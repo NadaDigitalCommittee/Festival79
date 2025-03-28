@@ -29,8 +29,8 @@ export default function Home() {
                     </section>
                 </div>
             </div>
-            <div className="col-start-1 col-end-2 flex flex-col justify-between rounded-2xl p-2 dark:bg-zinc-700">
-                <h2 className="flex h-16 flex-row p-6 dark:text-dark-primary">
+            <div className="col-start-1 col-end-2 flex flex-col justify-between rounded-2xl p-4 dark:bg-zinc-700">
+                <h2 className="flex h-16 flex-row p-2 dark:text-dark-primary">
                     <HiCalendarDateRange className="mx-2 my-auto text-4xl" />
                     <div className="my-auto text-3xl font-bold">開催日時</div>
                 </h2>
@@ -67,8 +67,8 @@ export default function Home() {
                     </span>
                 </div>
             </div>
-            <div className="col-start-1 col-end-2 flex flex-col rounded-2xl p-2 md:col-start-2 md:col-end-3 dark:bg-zinc-700">
-                <h2 className="flex h-16 flex-row p-6 dark:text-dark-primary">
+            <div className="col-start-1 col-end-2 flex flex-col rounded-2xl p-4 md:col-start-2 md:col-end-3 dark:bg-zinc-700">
+                <h2 className="flex h-16 flex-row p-2 dark:text-dark-primary">
                     <HiMapPin className="mx-2 my-auto text-4xl" />
                     <div className="my-auto text-3xl font-bold">アクセス</div>
                 </h2>
