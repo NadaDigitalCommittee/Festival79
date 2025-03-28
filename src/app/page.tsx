@@ -27,25 +27,24 @@ export default function Home() {
                     </section>
                 </div>
             </div>
-            <div className="col-start-1 col-end-2 flex flex-col rounded-2xl p-6 dark:bg-zinc-700">
+            <div className="col-start-1 col-end-2 flex flex-col justify-between rounded-2xl p-6 dark:bg-zinc-700">
                 <h2 className="flex h-16 flex-row dark:text-[#dad8e5]">
                     <HiCalendarDateRange className="mx-2 my-auto text-4xl" />
                     <div className="my-auto text-3xl font-bold">開催日時</div>
                 </h2>
-                <div className="flex h-full flex-col justify-between pt-4">
-                    <div className="text-3xl font-bold md:text-4xl dark:text-[#c2c0cf]">
-                        <div className="flex flex-row gap-4">
-                            <div className="my-auto text-2xl md:text-3xl">2025</div>
-                            <div className="flex flex-col">
-                                <div>5/2</div>
-                                <div>5/3</div>
-                            </div>
-                            <div className="my-auto">9:?? - 15:??</div>
-                        </div>
+                <span className="flex items-center gap-3 text-3xl font-bold dark:text-[#c2c0cf]">
+                    <span className="text-4xl">5/2</span> ~<span className="text-4xl">5/3</span>
+                </span>
+                <div className="flex flex-col gap-8">
+                    <div className="flex items-center gap-8">
+                        <span className="text-2xl font-bold dark:text-[#c2c0cf]">1日目</span>
+                        <span className="text-4xl dark:text-[#c2c0cf]">9:00 ~ XX:XX</span>
                     </div>
-                    <p className="text-sm dark:text-[#c2c0cf]">
-                        開場時間前の来場はご遠慮ください。
-                    </p>
+                    <div className="flex items-center gap-8">
+                        <span className="text-2xl font-bold dark:text-[#c2c0cf]">2日目</span>
+                        <span className="text-4xl dark:text-[#c2c0cf]">9:00 ~ XX:XX</span>
+                    </div>
+                    <span className="dark:text-[#c2c0cf]">※開場時間前の来場はご遠慮ください</span>
                 </div>
             </div>
             <div className="col-start-1 col-end-2 flex flex-col rounded-2xl p-6 md:col-start-2 md:col-end-3 dark:bg-zinc-700">
