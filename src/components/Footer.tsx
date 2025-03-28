@@ -1,7 +1,7 @@
 import { SiFacebook, SiInstagram, SiLine, SiX, SiYoutube } from "react-icons/si"
 
-import WeaveLogo from "./svg/weave-logo.svg"
-import WeaveLogotype from "./svg/weave-logotype.svg"
+import { WeaveLogo } from "./WeaveLogo"
+import { WeaveLogotype } from "./WeaveLogotype"
 
 export const Footer = () => (
     <footer className="flex flex-col justify-center gap-8 bg-zinc-950 p-8 text-neutral-100 md:flex-row md:justify-between md:px-16">
