@@ -4,7 +4,7 @@ import { WeaveLogo } from "./WeaveLogo"
 import { WeaveLogotype } from "./WeaveLogotype"
 
 export const Footer = () => (
-    <footer className="flex flex-col justify-center gap-8 bg-zinc-700 p-8 text-neutral-100 md:flex-row md:justify-between md:px-16 dark:bg-zinc-900">
+    <footer className="flex flex-col justify-center gap-8 border-t border-[#c2c0cf] bg-[#242529] p-8 text-neutral-100 md:flex-row md:justify-between md:px-16">
         <div className="flex justify-center gap-2">
             <WeaveLogo className="my-auto size-full max-h-24 max-w-24" />
             <div className="flex w-min flex-col justify-center gap-3">
