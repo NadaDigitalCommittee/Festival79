@@ -10,8 +10,19 @@ export default {
         extend: {
             colors: {
                 background: "var(--background)",
-                foreground: "var(--foreground)",
                 theme: "#e84220",
+
+                light: {
+                    primary: "#000000",
+                    secondary: "#414145",
+                },
+
+                dark: {
+                    primary: "#dad8e5",
+                    secondary: "#c2c0cf",
+
+                    muted: "#3f3f46",
+                },
             },
             fontFamily: {
                 body: "var(--font-montserrat), var(--font-bizudpgothic)",
