@@ -32,19 +32,19 @@ export default function Home() {
                     <HiCalendarDateRange className="mx-2 my-auto text-4xl" />
                     <div className="my-auto text-3xl font-bold">開催日時</div>
                 </h2>
-                <span className="flex items-center gap-3 text-3xl font-bold dark:text-dark-secondary">
+                <span className="flex h-16 items-center gap-3 text-3xl font-bold dark:text-dark-secondary">
                     <span className="text-4xl">5/2</span> ~<span className="text-4xl">5/3</span>
                 </span>
-                <div className="flex flex-col gap-8">
-                    <div className="flex items-center gap-8">
+                <div className="grid grid-cols-[max-content_1fr] grid-rows-[1fr_1fr_max-content] gap-8">
+                    <div className="col-span-2 grid grid-cols-subgrid items-center gap-8">
                         <span className="text-2xl font-bold dark:text-dark-secondary">1日目</span>
                         <span className="text-4xl dark:text-dark-secondary">9:00 ~ XX:XX</span>
                     </div>
-                    <div className="flex items-center gap-8">
+                    <div className="col-span-2 grid grid-cols-subgrid items-center gap-8">
                         <span className="text-2xl font-bold dark:text-dark-secondary">2日目</span>
                         <span className="text-4xl dark:text-dark-secondary">9:00 ~ XX:XX</span>
                     </div>
-                    <span className="dark:text-dark-secondary">
+                    <span className="col-span-2 dark:text-dark-secondary">
                         ※開場時間前の来場はご遠慮ください
                     </span>
                 </div>
