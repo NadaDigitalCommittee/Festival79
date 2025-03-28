@@ -15,6 +15,7 @@ export const metadata: Metadata = {
     title: "第79回灘校文化祭 weave",
     description:
         "2025年5月2日・5月3日に開催される第79回灘校文化祭「weave」の公式ウェブサイトです。",
+    metadataBase: new URL("https://fest79.nada-sc.jp"),
 }
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
