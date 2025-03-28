@@ -54,11 +54,15 @@ export default function Home() {
                 <div className="grid grid-cols-[max-content_1fr] grid-rows-[1fr_1fr_max-content] gap-8">
                     <div className="col-span-2 grid grid-cols-subgrid items-center gap-8">
                         <span className="text-2xl font-bold dark:text-dark-secondary">1日目</span>
-                        <span className="text-4xl dark:text-dark-secondary">9:00 ~ XX:XX</span>
+                        <span className="flex justify-center text-4xl md:justify-start dark:text-dark-secondary">
+                            <span>9:00</span> ~ <span>XX:XX</span>
+                        </span>
                     </div>
                     <div className="col-span-2 grid grid-cols-subgrid items-center gap-8">
                         <span className="text-2xl font-bold dark:text-dark-secondary">2日目</span>
-                        <span className="text-4xl dark:text-dark-secondary">9:00 ~ XX:XX</span>
+                        <span className="flex justify-center text-4xl md:justify-start dark:text-dark-secondary">
+                            <span>9:00</span> ~ <span>XX:XX</span>
+                        </span>
                     </div>
                     <span className="col-span-2 dark:text-dark-secondary">
                         ※開場時間前の来場はご遠慮ください
