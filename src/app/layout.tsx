@@ -4,6 +4,7 @@ import { BIZ_UDPGothic, Montserrat } from "next/font/google"
 import "./globals.css"
 
 import { Footer } from "@/components/Footer"
+import { Header } from "@/components/Header"
 
 // import { Footer } from "@/components/Footer"
 
@@ -31,8 +32,9 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
     return (
         <html lang="ja">
             <body
-                className={`${montserrat.variable} ${bizUdpGothic.variable} font-body antialiased`}
+                className={`${montserrat.variable} ${bizUdpGothic.variable} flex flex-col gap-10 font-body antialiased`}
             >
+                <Header />
                 {children}
                 <Footer />
             </body>
