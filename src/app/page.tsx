@@ -20,7 +20,7 @@ export default function Home() {
                         WEAVE
                     </span>
                     <span className="text-4xl font-bold dark:text-dark-primary">
-                        灘校生徒全員で織る文化祭
+                        灘校生徒全員で織り上げる作品
                     </span>
                     <section className="pt-4 text-xl font-bold text-light-secondary dark:text-dark-secondary">
                         weaveには、〈織り成す〉という意味があります
