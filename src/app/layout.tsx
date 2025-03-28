@@ -15,6 +15,7 @@ const montserrat = Montserrat({
 const bizUdpGothic = BIZ_UDPGothic({
     weight: "400",
     display: "swap",
+    subsets: ["latin"],
     variable: "--font-bizudpgothic",
 })
 
