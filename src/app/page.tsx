@@ -32,7 +32,7 @@ export default function Home() {
                     <HiCalendarDateRange className="mx-2 my-auto text-4xl" />
                     <div className="my-auto text-3xl font-bold">開催日時</div>
                 </h2>
-                <span className="flex h-16 items-center justify-center gap-4 font-date dark:text-dark-secondary">
+                <span className="flex h-16 items-center gap-6 pl-4 font-date dark:text-dark-secondary">
                     <div className="flex items-center">
                         <span className="text-5xl">5 / 2</span>
                         <span className="text-3xl [text-orientation:sideways] [writing-mode:vertical-rl]">
