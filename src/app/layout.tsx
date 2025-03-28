@@ -1,5 +1,6 @@
 import type { Metadata } from "next"
 import { BIZ_UDPGothic, Montserrat, PT_Sans_Narrow } from "next/font/google"
+import localFont from "next/font/local"
 
 import "./globals.css"
 
@@ -29,6 +30,12 @@ const ptSansNarrow = PT_Sans_Narrow({
     variable: "--font-ptsansnarrow",
 })
 
+const udevGothic = localFont({
+    src: "./UDEVGothicHSJPDOC-Regular.ttf",
+    display: "swap",
+    variable: "--font-udevgothic",
+})
+
 export const metadata: Metadata = {
     title: "第79回灘校文化祭 weave",
     description:
@@ -43,7 +50,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
     return (
         <html lang="ja">
             <body
-                className={`${montserrat.variable} ${bizUdpGothic.variable} ${ptSansNarrow.variable} flex flex-col gap-10 font-body antialiased`}
+                className={`${montserrat.variable} ${bizUdpGothic.variable} ${ptSansNarrow.variable} ${udevGothic.variable} flex flex-col gap-10 font-body antialiased`}
             >
                 <Header />
                 {children}

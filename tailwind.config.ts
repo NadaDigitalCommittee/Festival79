@@ -31,6 +31,7 @@ export default {
             fontFamily: {
                 body: "var(--font-montserrat), var(--font-bizudpgothic)",
                 date: "var(--font-ptsansnarrow)",
+                udev: "var(--font-udevgothic)",
             },
             keyframes: {
                 logo: {

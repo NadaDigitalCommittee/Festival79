@@ -1,7 +1,6 @@
 import { HiCalendarDateRange, HiMapPin } from "react-icons/hi2"
 
 import { LogoAnimation } from "@/components/LogoAnimation"
-import { WeaveLogotype } from "@/components/WeaveLogotype"
 
 export default function Home() {
     return (
@@ -11,19 +10,24 @@ export default function Home() {
                     <LogoAnimation className="drop-shadow-lg" />
                 </div>
             </div>
-            <div className="col-start-1 col-end-2 md:col-start-2 md:col-end-3">
-                <div className="flex size-full flex-col justify-center gap-4">
-                    <h1 className="text-primary break-keep p-2 text-5xl font-bold dark:text-theme">
+            <div className="col-start-1 col-end-2 font-udev md:col-start-2 md:col-end-3">
+                <div className="flex h-full w-full flex-col justify-center gap-4">
+                    <span className="break-keep text-5xl font-bold dark:text-dark-primary">
                         第79回 <wbr />
                         灘校文化祭
-                    </h1>
-                    <WeaveLogotype className="max-w-80 pl-2 text-theme dark:text-dark-primary" />
-                    <section className="pt-4 text-xl leading-10 text-light-secondary dark:text-dark-secondary">
-                        <p>「weave」には、「織り成す」という意味があります。</p>
-                        <p>
-                            灘校生の熱中するものへの思いや努力それぞれを一本一本の糸にたとえ、灘校文化祭の数多くの場面でその糸を織り成し、華々しく表現してほしい。
-                        </p>
-                        <p>そんな思いが込められています。</p>
+                    </span>
+                    <span className="text-5xl font-bold text-theme dark:text-dark-primary">
+                        WEAVE
+                    </span>
+                    <span className="text-4xl font-bold dark:text-dark-primary">
+                        灘校生徒全員で織る文化祭
+                    </span>
+                    <section className="pt-4 text-xl font-bold text-light-secondary dark:text-dark-secondary">
+                        weaveには、〈織り成す〉という意味があります
+                        <br />
+                        灘校生の熱中するものへの思いや努力それぞれを一本一本の糸にたとえ、灘校文化祭という舞台でその糸を織り成し、華々しく表現してほしい
+                        <br />
+                        そんな思いが込められています
                     </section>
                 </div>
             </div>
