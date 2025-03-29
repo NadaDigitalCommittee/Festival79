@@ -78,6 +78,7 @@ export default function Home() {
                             loading="lazy"
                             referrerPolicy="no-referrer-when-downgrade"
                             className="size-full rounded-lg"
+                            title="灘中学校・灘高等学校のGoogleマップ"
                         ></iframe>
                     </div>
                 </div>
