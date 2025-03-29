@@ -6,7 +6,7 @@ export default function Home() {
     return (
         <main className="container mx-auto grid grid-cols-1 gap-x-6 gap-y-14 p-4 md:grid-cols-2 md:p-10">
             <div className="col-start-1 col-end-2 flex justify-center rounded-xl">
-                <div className="size-96">
+                <div className="size-64 md:size-96">
                     <LogoAnimation className="drop-shadow-lg" />
                 </div>
             </div>
@@ -20,7 +20,7 @@ export default function Home() {
                     <span className="text-4xl font-bold dark:text-dark-primary">
                         生徒全員で織り上げる作品
                     </span>
-                    <section className="pt-4 text-xl font-bold text-light-secondary dark:text-dark-secondary">
+                    <section className="pt-4 text-xl text-light-secondary dark:text-dark-secondary">
                         weaveには、〈織り成す〉という意味があります
                         <br />
                         灘校生の熱中するものへの思いや努力それぞれを一本一本の糸にたとえ、灘校文化祭という舞台でその糸を織り成し、華々しく表現してほしい
