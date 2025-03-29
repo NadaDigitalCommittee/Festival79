@@ -1,3 +1,6 @@
+import { useState } from "react"
+import { useInterval } from "usehooks-ts"
+
 const eventDate = Date.parse(new Date("2025-05-02T00:00:00+09:00").toISOString())
 
 /*
@@ -19,7 +22,12 @@ function getNoD() {
 }
 
 export const EventDateCounter = () => {
-    const eventNoD = getNoD()
+    const initialEventNoD = getNoD()
+    const [eventNoD, setEventNoD] = useState<number>(initialEventNoD)
+
+    useInterval(() => {
+        setEventNoD(getNoD())
+    }, 1000 * 60)
     return (
         <div className="flex items-center">
             {eventNoD == 0 ? (
