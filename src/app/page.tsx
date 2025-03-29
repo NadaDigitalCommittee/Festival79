@@ -32,37 +32,39 @@ export default function Home() {
                     <HiCalendarDateRange className="mx-2 my-auto text-4xl" />
                     <div className="my-auto text-3xl font-bold">開催日時</div>
                 </h2>
-                <span className="flex h-16 items-center gap-2 pl-4 font-date md:gap-4 lg:gap-6 dark:text-dark-secondary">
-                    <div className="flex items-center">
-                        <span className="text-5xl tracking-widest">5/2</span>
-                        <span className="text-3xl [text-orientation:sideways] [writing-mode:vertical-rl]">
-                            FRI
-                        </span>
+                <div className="flex size-full flex-col justify-between p-4">
+                    <div className="flex h-16 items-center gap-2 font-date md:gap-4 lg:gap-6 dark:text-dark-secondary">
+                        <div className="flex items-center">
+                            <span className="text-5xl tracking-widest">5/2</span>
+                            <span className="text-3xl [text-orientation:sideways] [writing-mode:vertical-rl]">
+                                FRI
+                            </span>
+                        </div>
+                        <span className="text-3xl">-</span>
+                        <div className="flex items-center">
+                            <span className="text-5xl tracking-widest">5/3</span>
+                            <span className="text-3xl [text-orientation:sideways] [writing-mode:vertical-rl]">
+                                SAT
+                            </span>
+                        </div>
                     </div>
-                    <span className="text-3xl">-</span>
-                    <div className="flex items-center">
-                        <span className="text-5xl tracking-widest">5/3</span>
-                        <span className="text-3xl [text-orientation:sideways] [writing-mode:vertical-rl]">
-                            SAT
-                        </span>
+                    <div className="grid grid-cols-[max-content_1fr] grid-rows-[1fr_1fr_max-content] gap-8">
+                        <div className="col-span-2 grid grid-cols-subgrid items-center gap-8">
+                            <span className="text-right text-2xl font-bold dark:text-dark-secondary">
+                                1日目
+                            </span>
+                            <span className="text-4xl dark:text-dark-secondary">9:00 - XX:XX</span>
+                        </div>
+                        <div className="col-span-2 grid grid-cols-subgrid items-center gap-8">
+                            <span className="text-right text-2xl font-bold dark:text-dark-secondary">
+                                2日目
+                            </span>
+                            <span className="text-4xl dark:text-dark-secondary">9:00 - XX:XX</span>
+                        </div>
                     </div>
-                </span>
-                <div className="grid grid-cols-[max-content_1fr] grid-rows-[1fr_1fr_max-content] gap-8">
-                    <div className="col-span-2 grid grid-cols-subgrid items-center gap-8">
-                        <span className="text-right text-2xl font-bold dark:text-dark-secondary">
-                            1日目
-                        </span>
-                        <span className="text-4xl dark:text-dark-secondary">9:00 - XX:XX</span>
-                    </div>
-                    <div className="col-span-2 grid grid-cols-subgrid items-center gap-8">
-                        <span className="text-right text-2xl font-bold dark:text-dark-secondary">
-                            2日目
-                        </span>
-                        <span className="text-4xl dark:text-dark-secondary">9:00 - XX:XX</span>
-                    </div>
-                    <span className="col-span-2 dark:text-dark-secondary">
+                    <p className="col-span-2 text-sm sm:text-base dark:text-dark-secondary">
                         ※開場時間前の来場はご遠慮ください
-                    </span>
+                    </p>
                 </div>
             </div>
             <div className="col-start-1 col-end-2 flex flex-col rounded-2xl p-4 md:col-start-2 md:col-end-3 dark:bg-zinc-700">
