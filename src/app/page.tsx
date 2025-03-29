@@ -53,13 +53,13 @@ export default function Home() {
                             <span className="text-right text-2xl font-bold dark:text-dark-secondary">
                                 1日目
                             </span>
-                            <span className="text-4xl dark:text-dark-secondary">9:00 - XX:XX</span>
+                            <span className="text-4xl dark:text-dark-secondary">9:00 - 15:30</span>
                         </div>
                         <div className="col-span-2 grid grid-cols-subgrid items-center gap-8">
                             <span className="text-right text-2xl font-bold dark:text-dark-secondary">
                                 2日目
                             </span>
-                            <span className="text-4xl dark:text-dark-secondary">9:00 - XX:XX</span>
+                            <span className="text-4xl dark:text-dark-secondary">9:00 - 15:30</span>
                         </div>
                     </div>
                     <p className="col-span-2 text-sm sm:text-base dark:text-dark-secondary">
