@@ -18,7 +18,7 @@ export default function Home() {
                         灘校文化祭
                     </h1>
                     <WeaveLogotype className="max-w-80 pl-2 text-theme dark:text-dark-primary" />
-                    <section className="pt-4 text-xl leading-10 text-light-secondary dark:text-dark-secondary">
+                    <section className="pt-4 text-xl leading-8 text-light-secondary md:leading-10 dark:text-dark-secondary">
                         <p>「weave」には、「織り成す」という意味があります。</p>
                         <p>
                             灘校生の熱中するものへの思いや努力それぞれを一本一本の糸にたとえ、灘校文化祭の数多くの場面でその糸を織り成し、華々しく表現してほしい。
