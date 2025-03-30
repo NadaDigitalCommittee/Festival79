@@ -6,11 +6,11 @@ import { WeaveLogotype } from "@/components/WeaveLogotype"
 
 export const Header = () => {
     return (
-        <header className="container flex min-h-20 items-center justify-between">
-            <div className="flex items-center gap-4">
+        <header className="container sticky top-0 z-10 flex items-center justify-between bg-background p-4">
+            <div className="flex min-h-9 items-center gap-4">
                 <Link href="/" className="flex items-center gap-2">
                     <WeaveLogo className="size-9" />
-                    <WeaveLogotype className="h-4 dark:text-dark-primary" />
+                    <WeaveLogotype className="hidden h-4 sm:block dark:text-dark-primary" />
                 </Link>
                 <EventDateCounter />
             </div>
