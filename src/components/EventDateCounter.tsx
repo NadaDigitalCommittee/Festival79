@@ -38,7 +38,11 @@ export const EventDateCounter = () => {
                 </span>
             ) : (
                 <span className="flex items-center font-bold dark:text-dark-primary">
-                    開催まであと
+                    <span className="break-keep text-center">
+                        開催まで
+                        <wbr />
+                        あと
+                    </span>
                     <span className="text-3xl dark:text-theme">{eventNoD}</span>日！
                 </span>
             )}

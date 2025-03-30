@@ -81,7 +81,7 @@ export default function Home() {
                             兵庫県神戸市 東灘区 魚崎北町8丁目5番1号
                         </p>
                     </section>
-                    <div className="aspect-[2/1_auto] size-full">
+                    <div className="aspect-[2/1_auto] size-full min-h-0">
                         <iframe
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3279.430097231349!2d135.26561937600025!3d34.71955168220066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60008cfd8440bcc9%3A0x526d26ccfad6f4df!2z54GY5Lit5a2m5qCh44O76auY562J5a2m5qCh!5e0!3m2!1sja!2sjp!4v1713313991974!5m2!1sja!2sjp"
                             allowFullScreen={false}
