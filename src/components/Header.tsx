@@ -10,7 +10,7 @@ export const Header = () => {
             <div className="flex min-h-9 items-center gap-4">
                 <Link href="/" className="flex items-center gap-2">
                     <WeaveLogo className="size-9" />
-                    <WeaveLogotype className="h-4 dark:text-dark-primary" />
+                    <WeaveLogotype className="hidden h-4 sm:block dark:text-dark-primary" />
                 </Link>
                 <EventDateCounter />
             </div>

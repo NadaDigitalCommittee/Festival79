@@ -39,7 +39,7 @@ export const EventDateCounter = () => {
             ) : (
                 <span className="flex items-center font-bold dark:text-dark-primary">
                     <span className="break-keep text-center">
-                        開催まで
+                        <span className="max-[300px]:hidden">開催まで</span>
                         <wbr />
                         あと
                     </span>
