@@ -37,6 +37,9 @@ export const metadata: Metadata = {
     twitter: {
         card: "summary",
     },
+    verification: {
+        google: "PTuYY8Ir058CB4ePCpllrPWyIjSUM0b_FOr8a1G-UXM",
+    },
 }
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
