@@ -1,14 +1,32 @@
 import type { Metadata } from "next"
-import { Geist_Mono } from "next/font/google"
+import { BIZ_UDPGothic, Montserrat, PT_Sans_Narrow } from "next/font/google"
 
 import "./globals.css"
 
+import { Footer } from "@/components/Footer"
+import { Header } from "@/components/Header"
+
 // import { Footer } from "@/components/Footer"
 
-const geistMono = Geist_Mono({
+const montserrat = Montserrat({
     weight: "variable",
     display: "swap",
     subsets: ["latin"],
+    variable: "--font-montserrat",
+})
+
+const bizUdpGothic = BIZ_UDPGothic({
+    weight: "400",
+    display: "swap",
+    subsets: ["latin"],
+    variable: "--font-bizudpgothic",
+})
+
+const ptSansNarrow = PT_Sans_Narrow({
+    weight: "400",
+    display: "swap",
+    subsets: ["latin"],
+    variable: "--font-ptsansnarrow",
 })
 
 export const metadata: Metadata = {
@@ -24,9 +42,12 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
     return (
         <html lang="ja">
-            <body className={`${geistMono.className} antialiased`}>
+            <body
+                className={`${montserrat.variable} ${bizUdpGothic.variable} ${ptSansNarrow.variable} grid min-h-screen grid-cols-1 grid-rows-[auto_1fr_auto] gap-10 font-body antialiased`}
+            >
+                <Header />
                 {children}
-                {/* <Footer /> */}
+                <Footer />
             </body>
         </html>
     )
