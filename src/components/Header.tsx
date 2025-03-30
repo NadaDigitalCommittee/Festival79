@@ -6,7 +6,7 @@ import { WeaveLogotype } from "@/components/WeaveLogotype"
 
 export const Header = () => {
     return (
-        <header className="container flex min-h-20 items-center justify-between">
+        <header className="container sticky top-0 z-10 flex min-h-20 items-center justify-between bg-background">
             <div className="flex items-center gap-4">
                 <Link href="/" className="flex items-center gap-2">
                     <WeaveLogo className="size-9" />
