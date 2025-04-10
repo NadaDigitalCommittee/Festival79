@@ -130,6 +130,31 @@ const GOODS: ComponentProps<typeof GoodsCard>[] = [
             </>
         ),
     },
+    {
+        imageSrc: ["/img/goods/018.png"],
+        name: "ホットマンタオル",
+        price: 3000,
+        description: (
+            <>
+                28cm四方のホットマンタオル！青空を背景に桜が咲いている、春の灘校正門が描かれています。
+                <br />
+                縁の色はピンクとグリーンの2色がございます♪
+            </>
+        ),
+        variants: ["ピンク", "グリーン"],
+    },
+    {
+        imageSrc: ["/img/goods/019.png"],
+        name: "パスケース",
+        price: 1500,
+        description: (
+            <>
+                便利なフックとリール付き！灘中・高の校章が描かれた、普段使いしやすい黒のパスケースです。
+                <br />
+                カードや定期券入れにおすすめ！
+            </>
+        ),
+    },
 ]
 
 export const GoodsList = () => (
