@@ -579,7 +579,7 @@ const GoodsThumb = ({ src, alt }: GoodsThumbProps) => {
     if (len === 1)
         return (
             <Image
-                className="size-full object-cover"
+                className="size-full object-contain"
                 width={600}
                 height={400}
                 src={src[0]}
@@ -590,14 +590,14 @@ const GoodsThumb = ({ src, alt }: GoodsThumbProps) => {
         return (
             <div className="flex size-full items-center gap-1">
                 <Image
-                    className="w-1/2 object-cover"
+                    className="w-1/2 object-contain"
                     width={600}
                     height={400}
                     src={src[0]}
                     alt={alt}
                 />
                 <Image
-                    className="w-1/2 object-cover"
+                    className="w-1/2 object-contain"
                     width={600}
                     height={400}
                     src={src[1]}
