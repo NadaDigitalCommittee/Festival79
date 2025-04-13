@@ -8,10 +8,10 @@ const GOODS: ComponentProps<typeof GoodsCard>[] = [
         price: 1500,
         description: (
             <>
-                第79回灘校文化祭のテーマ「weave」
-                がプリントされた、生徒デザインのコットンTシャツです。
+                第79回灘校文化祭のテーマ「weave」がプリントされた、生徒デザインのコットンTシャツです。
                 <br />
                 サイズはS,M,L,XLの4種類をご用意しております♪
+                <br />
                 もちろん今年限定！文化祭の思い出にいかがですか？
             </>
         ),
@@ -71,6 +71,15 @@ const GOODS: ComponentProps<typeof GoodsCard>[] = [
     {
         imageSrc: ["/img/goods/012.png"],
         name: "A4クリアファイル2枚組",
+        display_name: (
+            <span className="break-keep">
+                A4クリア
+                <wbr />
+                ファイル
+                <wbr />
+                2枚組
+            </span>
+        ),
         price: 400,
         description: (
             <>
@@ -88,7 +97,7 @@ const GOODS: ComponentProps<typeof GoodsCard>[] = [
             <>
                 今年新作のアクリルキーホルダー！ロゴとテーマがプリントされています。
                 <br />
-                手頃なサイズ何でリュックやカバンのキーホルダーにいかがですか？
+                手頃なサイズなのでリュックやカバンのキーホルダーにいかがですか？
             </>
         ),
         variants: ["7cm x 4cm"],
@@ -99,9 +108,11 @@ const GOODS: ComponentProps<typeof GoodsCard>[] = [
         price: 2000,
         description: (
             <>
-                今年度退職された書道の倉橋先生が書かれた「灘」の文字と矢絣模様が描かれたお弁当箱です。
+                2024年度退職された書道の倉橋先生が書かれた「灘」の文字と矢絣模様が描かれた生徒デザインのお弁当箱です。
                 <br />
-                黒とオレンジの2色展開！中にはしきりも入っています。
+                黒とオレンジの2色展開！
+                <br />
+                中にはしきりも入っています。
             </>
         ),
         variants: ["黒", "オレンジ"],
@@ -138,10 +149,10 @@ const GOODS: ComponentProps<typeof GoodsCard>[] = [
             <>
                 28cm四方のホットマンタオル！青空を背景に桜が咲いている、春の灘校正門が描かれています。
                 <br />
-                縁の色はピンクとグリーンの2色がございます♪
+                縁の色はグリーンとピンクの2色がございます♪
             </>
         ),
-        variants: ["ピンク", "グリーン"],
+        variants: ["グリーン", "ピンク"],
     },
     {
         imageSrc: ["/img/goods/019.png"],
@@ -225,14 +236,14 @@ const GOODS: ComponentProps<typeof GoodsCard>[] = [
         price: 150,
         description: (
             <>
-                赤、青、黒の単色ボールペンです。
+                黒、赤、青の単色ボールペンです。
                 <br />
                 持ち手には校章と学校名が書かれています♪
                 <br />
                 普段使いにどうぞ！
             </>
         ),
-        variants: ["赤", "青", "黒"],
+        variants: ["黒", "赤", "青"],
     },
     {
         imageSrc: ["/img/goods/039.png"],
@@ -394,7 +405,7 @@ const GOODS: ComponentProps<typeof GoodsCard>[] = [
                 <br />
                 シンプルなA4サイズのクリアファイルです。
                 <br />
-                透明、青、緑、黄、ピンクのご種類をご用意しております！
+                透明、青、緑、黄、ピンクの5種類をご用意しております！
             </>
         ),
         variants: ["透明", "青", "緑", "黄", "ピンク"],
@@ -429,6 +440,13 @@ const GOODS: ComponentProps<typeof GoodsCard>[] = [
     {
         imageSrc: ["/img/goods/066.png"],
         name: "カプセルトイ",
+        display_name: (
+            <span className="break-keep">
+                灘校オリジナル
+                <wbr />
+                カプセルトイ
+            </span>
+        ),
         price: 300,
         description: (
             <>
@@ -468,7 +486,7 @@ const GOODS: ComponentProps<typeof GoodsCard>[] = [
         price: 550,
         description: (
             <>
-                2個入りセットの灘校三笠です。
+                2個入りの灘校三笠です。
                 <br />
                 中学・高校の校章の焼き印が押されたここだけのオリジナルお菓子！
                 <br />
@@ -484,7 +502,7 @@ const GOODS: ComponentProps<typeof GoodsCard>[] = [
             <>
                 気分スッキリタブレット！
                 <br />
-                校章がデザインされた黒のケースに入っています。
+                生徒デザインの、校章があしらわれた黒のケースに入っています。
                 <br />
                 勉強中の眠気覚ましなどにピッタリです♪
             </>
@@ -511,15 +529,15 @@ const GOODS: ComponentProps<typeof GoodsCard>[] = [
             <>
                 オリジナルデザインの箱に入ったバームクーヘンです。
                 <br />
-                箱は赤と青の2種類がございます。
+                箱は青と赤の2種類がございます。
             </>
         ),
-        variants: ["赤", "青"],
+        variants: ["青", "赤"],
     },
 ]
 
 export const GoodsList = () => (
-    <div className="grid max-w-60 grid-cols-1 sm:max-w-full sm:grid-cols-2 lg:grid-cols-3">
+    <div className="grid max-w-full grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
         {GOODS.map((v) => (
             <GoodsCard key={v.name} {...v} />
         ))}
@@ -529,19 +547,27 @@ export const GoodsList = () => (
 type GoodsCardProps = {
     imageSrc: ComponentProps<typeof GoodsThumb>["src"]
     name: string
+    display_name?: ReactNode
     price: number
     description: ReactNode
     variants?: [string, ...string[]] | [...string[], string]
 }
 
-const GoodsCard = ({ imageSrc, name, price, description, variants }: GoodsCardProps) => (
+const GoodsCard = ({
+    imageSrc,
+    name,
+    price,
+    description,
+    variants,
+    display_name,
+}: GoodsCardProps) => (
     <div className="row-span-4 grid grid-rows-subgrid gap-y-4 p-4">
         <div className="aspect-video">
             <GoodsThumb src={imageSrc} alt={`${name}のサムネイル画像`} />
         </div>
         <div className="flex justify-between">
             <span className="whitespace-pre-wrap text-xl font-bold text-light-primary dark:text-dark-primary">
-                {name}
+                {display_name ? display_name : name}
             </span>
             <span className="text-xl font-bold text-light-primary dark:text-dark-primary">
                 ￥{price}
