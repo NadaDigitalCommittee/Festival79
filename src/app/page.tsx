@@ -63,7 +63,7 @@ export default function Home() {
                         </div>
                     </div>
                     <p className="col-span-2 text-sm sm:text-base dark:text-dark-secondary">
-                        ※開場時間前の来場はご遠慮ください
+                        ※開場時間前のご来場はお控えください
                     </p>
                 </div>
             </div>
