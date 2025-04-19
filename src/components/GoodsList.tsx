@@ -606,8 +606,8 @@ const GoodsThumb = ({ src, alt }: GoodsThumbProps) => {
         return (
             <Image
                 className="size-full object-contain"
-                width={600}
-                height={400}
+                width={450}
+                height={300}
                 src={src[0]}
                 alt={alt}
             />
@@ -617,15 +617,15 @@ const GoodsThumb = ({ src, alt }: GoodsThumbProps) => {
             <div className="flex size-full items-center gap-1">
                 <Image
                     className="w-1/2 object-contain"
-                    width={600}
-                    height={400}
+                    width={450}
+                    height={300}
                     src={src[0]}
                     alt={alt}
                 />
                 <Image
                     className="w-1/2 object-contain"
-                    width={600}
-                    height={400}
+                    width={450}
+                    height={300}
                     src={src[1]}
                     alt={alt}
                 />
