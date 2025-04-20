@@ -24,3 +24,7 @@ export default function Event({ params: { category } }: { params: { category?: s
         </main>
     )
 }
+
+export function generateStaticParams() {
+    return ["court", "multimedia", "live", "hall", "music", "lecture"].map((v) => ({ category: v }))
+}
