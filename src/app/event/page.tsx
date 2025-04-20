@@ -1,12 +1,5 @@
-import { TabButton } from "@/components/TabButton"
+import Event from "@/app/event/[category]/page"
 
-export default function EventsTabSwitcher() {
-    return (
-        <div className="grid grid-cols-6 gap-2">
-            <TabButton href="/events/court">中庭</TabButton>
-            <TabButton href="/events/multimedia">視聴覚</TabButton>
-            <TabButton href="/events/hall">大講義</TabButton>
-            <TabButton href="/events/live">本館ライブ</TabButton>
-        </div>
-    )
+export default function DefaultEvent() {
+    return <Event params={{ category: "court" }} />
 }
