@@ -33,7 +33,7 @@ const EventData: Events = {
                     <br />
                     灘に舞い降りた10人の美女の躍動を見逃すな！
                     <br />
-                    <span className="text-sm text-red-500">
+                    <span className="text-sm">
                         ※毎年心を奪われてしまうお客様が大変多いです。お気をつけください。
                     </span>
                 </>
