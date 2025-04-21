@@ -26,6 +26,8 @@ const GOODS: ComponentProps<typeof GoodsCard>[] = [
                 胸元にNADA、背面には裾に灘とプリントされた、普段使いもしやすいシンプルなデザインのTシャツです。
                 <br />
                 サイズはS,M,L,LLの4種類をご用意しております!
+                <br />
+                (ポリエステル生地)
             </>
         ),
         variants: ["Sサイズ", "Mサイズ", "Lサイズ", "LLサイズ"],
@@ -253,7 +255,7 @@ const GOODS: ComponentProps<typeof GoodsCard>[] = [
             <>
                 太字、細字の両方に対応していて便利！
                 <br />
-                桃、黄、空色の3色の蛍光ペンセットです。
+                空、黄、桃色の3色の蛍光ペンセットです。
                 <br />
                 校章、学校名がプリントされたケースに入っています♪
             </>
@@ -469,7 +471,7 @@ const GOODS: ComponentProps<typeof GoodsCard>[] = [
         ),
     },
     {
-        imageSrc: [],
+        imageSrc: ["/img/goods/068.png"],
         name: "灘校煎餅",
         price: 650,
         description: (
@@ -481,7 +483,7 @@ const GOODS: ComponentProps<typeof GoodsCard>[] = [
         ),
     },
     {
-        imageSrc: [],
+        imageSrc: ["/img/goods/069.png"],
         name: "灘校三笠",
         price: 550,
         description: (
