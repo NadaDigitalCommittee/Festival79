@@ -11,7 +11,7 @@ if (process.env.NODE_ENV === "development") {
 
 const nextConfig: NextConfig = {
     images: {
-        formats: ["image/avif", "image/webp"],
+        formats: ["image/webp"],
     },
 }
 
