@@ -72,24 +72,42 @@ export default function Home() {
                     <HiMapPin className="mx-2 my-auto text-4xl" />
                     <div className="my-auto text-3xl font-bold">アクセス</div>
                 </h2>
-                <div className="flex size-full flex-col justify-between gap-4 p-4">
-                    <section>
-                        <h3 className="text-2xl text-light-secondary dark:text-dark-secondary">
-                            灘中学校・灘高等学校
-                        </h3>
-                        <p className="text-light-secondary dark:text-dark-secondary">
-                            兵庫県神戸市 東灘区 魚崎北町8丁目5番1号
-                        </p>
-                    </section>
-                    <div className="aspect-[2/1_auto] size-full min-h-0">
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3279.430097231349!2d135.26561937600025!3d34.71955168220066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60008cfd8440bcc9%3A0x526d26ccfad6f4df!2z54GY5Lit5a2m5qCh44O76auY562J5a2m5qCh!5e0!3m2!1sja!2sjp!4v1713313991974!5m2!1sja!2sjp"
-                            allowFullScreen={false}
-                            loading="lazy"
-                            referrerPolicy="no-referrer-when-downgrade"
-                            className="size-full rounded-lg"
-                            title="灘中学校・灘高等学校のGoogleマップ"
-                        ></iframe>
+                <div className="flex gap-2">
+                    <div className="flex size-full flex-col justify-between gap-4 p-4">
+                        <section>
+                            <h3 className="text-2xl text-light-secondary dark:text-dark-secondary">
+                                灘中学校・灘高等学校
+                            </h3>
+                            <p className="text-light-secondary dark:text-dark-secondary">
+                                兵庫県神戸市 東灘区
+                                <br />
+                                魚崎北町8丁目5番1号
+                            </p>
+                        </section>
+                        <div className="aspect-[2/1_auto] size-full min-h-0">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3279.430097231349!2d135.26561937600025!3d34.71955168220066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60008cfd8440bcc9%3A0x526d26ccfad6f4df!2z54GY5Lit5a2m5qCh44O76auY562J5a2m5qCh!5e0!3m2!1sja!2sjp!4v1713313991974!5m2!1sja!2sjp"
+                                allowFullScreen={false}
+                                loading="lazy"
+                                referrerPolicy="no-referrer-when-downgrade"
+                                className="size-full rounded-lg"
+                                title="灘中学校・灘高等学校のGoogleマップ"
+                            ></iframe>
+                        </div>
+                    </div>
+                    <div className="grid shrink-0 grow-0 grid-rows-6">
+                        <span className="text-xl font-bold">JR住吉駅</span>
+                        <span className="text-xl">
+                            徒歩<span className="font-bold text-theme">10</span>分
+                        </span>
+                        <span className="text-xl font-bold">阪神魚崎駅</span>
+                        <span className="text-xl">
+                            徒歩<span className="font-bold text-theme">10</span>分
+                        </span>
+                        <span className="text-xl font-bold">阪急岡本駅</span>
+                        <span className="text-xl">
+                            徒歩<span className="font-bold text-theme">25</span>分
+                        </span>
                     </div>
                 </div>
             </div>
