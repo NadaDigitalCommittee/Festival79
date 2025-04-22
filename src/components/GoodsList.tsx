@@ -51,10 +51,13 @@ const GOODS: ComponentProps<typeof GoodsCard>[] = [
         price: 1600,
         description: (
             <>
-                黒色をベースにロゴなどがデザインされた、シックなデザインのマグカップ！ステンレス製で頑丈です。
+                黒色をベースにロゴなどがデザインされた、シックなデザインのマグカップ！
+                <br />
+                ステンレス製で頑丈です。
+                <br />
+                (380ml)
             </>
         ),
-        variants: ["380ml"],
     },
     {
         imageSrc: ["/img/goods/011.png"],
@@ -62,13 +65,13 @@ const GOODS: ComponentProps<typeof GoodsCard>[] = [
         price: 1300,
         description: (
             <>
-                40×35cmの大容量で使いやすい内ポケット付き！
-                灘校グッズを買いすぎてしまっても安心です！
+                40×35cmの大容量で使いやすい内・外ポケット付き！
+                <br />
+                灘校グッズを買いすぎてしまっても安心なまちつきです！
                 <br />
                 こちらも生徒デザインの商品で、黒地に白のロゴが映えるシックな印象の一品です。
             </>
         ),
-        variants: ["40cm x 35cm"],
     },
     {
         imageSrc: ["/img/goods/012.png"],
@@ -100,9 +103,10 @@ const GOODS: ComponentProps<typeof GoodsCard>[] = [
                 今年新作のアクリルキーホルダー！ロゴとテーマがプリントされています。
                 <br />
                 手頃なサイズなのでリュックやカバンのキーホルダーにいかがですか？
+                <br />
+                (約7cm×4cm)
             </>
         ),
-        variants: ["7cm x 4cm"],
     },
     {
         imageSrc: ["/img/goods/014_0.png", "/img/goods/015_0.png"],
@@ -128,6 +132,8 @@ const GOODS: ComponentProps<typeof GoodsCard>[] = [
                 京都の染めの老舗「四季彩」の特製で、紺色の生地に白で校名と校歌の歌詞が書かれています！
                 <br />
                 惜しまれつつも2024年度で退任された本校書道教諭、倉橋奇艸先生の新作で、弁当箱とともに現役最後の灘校グッズ作品です♪
+                <br />
+                (綿シャンタン製)
             </>
         ),
     },
