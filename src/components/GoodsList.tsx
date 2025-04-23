@@ -3,7 +3,7 @@ import type { ComponentProps, ReactNode } from "react"
 
 const GOODS: ComponentProps<typeof GoodsCard>[] = [
     {
-        imageSrc: ["/img/goods/001_0.webp", "/img/goods/001_1.webp"],
+        imageSrc: ["/img/thumbs/001_0.webp", "/img/thumbs/001_1.webp"],
         name: "文化祭ロゴTシャツ",
         price: 1500,
         description: (
@@ -18,7 +18,7 @@ const GOODS: ComponentProps<typeof GoodsCard>[] = [
         variants: ["Sサイズ", "Mサイズ", "Lサイズ", "XLサイズ"],
     },
     {
-        imageSrc: ["/img/goods/005_0.webp", "/img/goods/005_1.webp"],
+        imageSrc: ["/img/thumbs/005_0.webp", "/img/thumbs/005_1.webp"],
         name: "灘ロゴTシャツ",
         price: 1000,
         description: (
@@ -33,7 +33,7 @@ const GOODS: ComponentProps<typeof GoodsCard>[] = [
         variants: ["Sサイズ", "Mサイズ", "Lサイズ", "LLサイズ"],
     },
     {
-        imageSrc: ["/img/goods/009.webp"],
+        imageSrc: ["/img/thumbs/009.webp"],
         name: "マフラータオル",
         price: 1000,
         description: (
@@ -46,7 +46,7 @@ const GOODS: ComponentProps<typeof GoodsCard>[] = [
         variants: ["20cm x 110cm"],
     },
     {
-        imageSrc: ["/img/goods/010.webp"],
+        imageSrc: ["/img/thumbs/010.webp"],
         name: "マグカップ",
         price: 1600,
         description: (
@@ -57,7 +57,7 @@ const GOODS: ComponentProps<typeof GoodsCard>[] = [
         variants: ["380ml"],
     },
     {
-        imageSrc: ["/img/goods/011.webp"],
+        imageSrc: ["/img/thumbs/011.webp"],
         name: "トートバッグ",
         price: 1300,
         description: (
@@ -71,7 +71,7 @@ const GOODS: ComponentProps<typeof GoodsCard>[] = [
         variants: ["40cm x 35cm"],
     },
     {
-        imageSrc: ["/img/goods/012.webp"],
+        imageSrc: ["/img/thumbs/012.webp"],
         name: "A4クリアファイル2枚組",
         display_name: (
             <span className="break-keep">
@@ -92,7 +92,7 @@ const GOODS: ComponentProps<typeof GoodsCard>[] = [
         ),
     },
     {
-        imageSrc: ["/img/goods/013.webp"],
+        imageSrc: ["/img/thumbs/013.webp"],
         name: "アクリルキーホルダー",
         price: 300,
         description: (
@@ -105,7 +105,7 @@ const GOODS: ComponentProps<typeof GoodsCard>[] = [
         variants: ["7cm x 4cm"],
     },
     {
-        imageSrc: ["/img/goods/014_0.webp", "/img/goods/015_0.webp"],
+        imageSrc: ["/img/thumbs/014_0.webp", "/img/thumbs/015_0.webp"],
         name: "弁当箱",
         price: 2000,
         description: (
@@ -120,7 +120,7 @@ const GOODS: ComponentProps<typeof GoodsCard>[] = [
         variants: ["黒", "オレンジ"],
     },
     {
-        imageSrc: ["/img/goods/016.webp"],
+        imageSrc: ["/img/thumbs/016.webp"],
         name: "風呂敷",
         price: 2000,
         description: (
@@ -132,7 +132,7 @@ const GOODS: ComponentProps<typeof GoodsCard>[] = [
         ),
     },
     {
-        imageSrc: ["/img/goods/017.webp"],
+        imageSrc: ["/img/thumbs/017.webp"],
         name: "アクリルオブジェ",
         price: 550,
         description: (
@@ -144,7 +144,7 @@ const GOODS: ComponentProps<typeof GoodsCard>[] = [
         ),
     },
     {
-        imageSrc: ["/img/goods/018.webp"],
+        imageSrc: ["/img/thumbs/018.webp"],
         name: "ホットマンタオル",
         price: 3000,
         description: (
@@ -157,7 +157,7 @@ const GOODS: ComponentProps<typeof GoodsCard>[] = [
         variants: ["グリーン", "ピンク"],
     },
     {
-        imageSrc: ["/img/goods/019.webp"],
+        imageSrc: ["/img/thumbs/019.webp"],
         name: "パスケース",
         price: 1500,
         description: (
@@ -169,7 +169,7 @@ const GOODS: ComponentProps<typeof GoodsCard>[] = [
         ),
     },
     {
-        imageSrc: ["/img/goods/020-022.webp"],
+        imageSrc: ["/img/thumbs/020-022.webp"],
         name: "灘ベア",
         price: 1000,
         description: (
@@ -182,7 +182,7 @@ const GOODS: ComponentProps<typeof GoodsCard>[] = [
         variants: ["ロイヤルブルー", "えんじ", "緑"],
     },
     {
-        imageSrc: ["/img/goods/023.webp"],
+        imageSrc: ["/img/thumbs/023.webp"],
         name: "灘校手ぬぐい",
         price: 300,
         description: (
@@ -194,7 +194,7 @@ const GOODS: ComponentProps<typeof GoodsCard>[] = [
         ),
     },
     {
-        imageSrc: ["/img/goods/024-027.webp"],
+        imageSrc: ["/img/thumbs/024-027.webp"],
         name: "ジェットストリーム4+1",
         price: 1000,
         description: (
@@ -207,7 +207,7 @@ const GOODS: ComponentProps<typeof GoodsCard>[] = [
         variants: ["ブラック", "ブラッドオレンジ", "ティールブルー", "ペールグリーン"],
     },
     {
-        imageSrc: ["/img/goods/028-031.webp"],
+        imageSrc: ["/img/thumbs/028-031.webp"],
         name: "ユニアルファゲル\n(シャーペン)",
         price: 500,
         description: (
@@ -220,7 +220,7 @@ const GOODS: ComponentProps<typeof GoodsCard>[] = [
         variants: ["ホワイト", "ネイビー", "レッド", "ガンメタ"],
     },
     {
-        imageSrc: ["/img/goods/032-035.webp"],
+        imageSrc: ["/img/thumbs/032-035.webp"],
         name: "クリフターシャーペン",
         price: 100,
         description: (
@@ -233,7 +233,7 @@ const GOODS: ComponentProps<typeof GoodsCard>[] = [
         variants: ["黒", "白オレンジ", "白黄緑", "白青"],
     },
     {
-        imageSrc: ["/img/goods/036-038.webp"],
+        imageSrc: ["/img/thumbs/036-038.webp"],
         name: "ユニボールシグノ\n(単色ボールペン0.5)",
         price: 150,
         description: (
@@ -248,7 +248,7 @@ const GOODS: ComponentProps<typeof GoodsCard>[] = [
         variants: ["黒", "赤", "青"],
     },
     {
-        imageSrc: ["/img/goods/039.webp"],
+        imageSrc: ["/img/thumbs/039.webp"],
         name: "蛍光ペン3本組\nケース入り",
         price: 400,
         description: (
@@ -262,7 +262,7 @@ const GOODS: ComponentProps<typeof GoodsCard>[] = [
         ),
     },
     {
-        imageSrc: ["/img/goods/040.webp"],
+        imageSrc: ["/img/thumbs/040.webp"],
         name: "三菱鉛筆ユニスターB6本組",
         price: 400,
         description: (
@@ -274,7 +274,7 @@ const GOODS: ComponentProps<typeof GoodsCard>[] = [
         ),
     },
     {
-        imageSrc: ["/img/goods/041.webp"],
+        imageSrc: ["/img/thumbs/041.webp"],
         name: "合格五角形鉛筆B2本組",
         price: 150,
         description: (
@@ -286,7 +286,7 @@ const GOODS: ComponentProps<typeof GoodsCard>[] = [
         ),
     },
     {
-        imageSrc: ["/img/goods/042-045.webp"],
+        imageSrc: ["/img/thumbs/042-045.webp"],
         name: "消しゴムくるっと",
         price: 250,
         description: (
@@ -299,7 +299,7 @@ const GOODS: ComponentProps<typeof GoodsCard>[] = [
         variants: ["グリーン", "ブルー", "イエロー", "パープル"],
     },
     {
-        imageSrc: ["/img/goods/046-047.webp"],
+        imageSrc: ["/img/thumbs/046-047.webp"],
         name: "シャーペン芯",
         price: 200,
         description: (
@@ -314,7 +314,7 @@ const GOODS: ComponentProps<typeof GoodsCard>[] = [
         variants: ["HB", "B"],
     },
     {
-        imageSrc: ["/img/goods/048.webp"],
+        imageSrc: ["/img/thumbs/048.webp"],
         name: "修正テープ\n(詰め替え型)",
         price: 400,
         description: (
@@ -326,7 +326,7 @@ const GOODS: ComponentProps<typeof GoodsCard>[] = [
         ),
     },
     {
-        imageSrc: ["/img/goods/049.webp"],
+        imageSrc: ["/img/thumbs/049.webp"],
         name: "定規",
         price: 300,
         description: (
@@ -340,7 +340,7 @@ const GOODS: ComponentProps<typeof GoodsCard>[] = [
         ),
     },
     {
-        imageSrc: ["/img/goods/050_0.webp", "/img/goods/050_1.webp"],
+        imageSrc: ["/img/thumbs/050_0.webp", "/img/thumbs/050_1.webp"],
         name: "筆箱",
         price: 1300,
         description: (
@@ -354,7 +354,7 @@ const GOODS: ComponentProps<typeof GoodsCard>[] = [
         ),
     },
     {
-        imageSrc: ["/img/goods/051-052.webp"],
+        imageSrc: ["/img/thumbs/051-052.webp"],
         name: "ノート",
         price: 250,
         description: (
@@ -369,7 +369,7 @@ const GOODS: ComponentProps<typeof GoodsCard>[] = [
         variants: ["A罫", "B罫"],
     },
     {
-        imageSrc: ["/img/goods/053.webp"],
+        imageSrc: ["/img/thumbs/053.webp"],
         name: "柔道着付箋",
         price: 250,
         description: (
@@ -383,7 +383,7 @@ const GOODS: ComponentProps<typeof GoodsCard>[] = [
         ),
     },
     {
-        imageSrc: ["/img/goods/054-055.webp"],
+        imageSrc: ["/img/thumbs/054-055.webp"],
         name: "下敷き",
         price: 200,
         description: (
@@ -398,7 +398,7 @@ const GOODS: ComponentProps<typeof GoodsCard>[] = [
         variants: ["赤", "緑"],
     },
     {
-        imageSrc: ["/img/goods/056-060.webp"],
+        imageSrc: ["/img/thumbs/056-060.webp"],
         name: "A4クリアファイル無地",
         price: 100,
         description: (
@@ -413,7 +413,7 @@ const GOODS: ComponentProps<typeof GoodsCard>[] = [
         variants: ["透明", "青", "緑", "黄", "ピンク"],
     },
     {
-        imageSrc: ["/img/goods/061_0.webp", "/img/goods/061_1.webp"],
+        imageSrc: ["/img/thumbs/061_0.webp", "/img/thumbs/061_1.webp"],
         name: "A5クリアファイル\n(ホットマン柄)",
         price: 200,
         description: (
@@ -425,7 +425,7 @@ const GOODS: ComponentProps<typeof GoodsCard>[] = [
         ),
     },
     {
-        imageSrc: ["/img/goods/062-065.webp"],
+        imageSrc: ["/img/thumbs/062-065.webp"],
         name: "エコバッグ",
         price: 600,
         description: (
@@ -440,7 +440,7 @@ const GOODS: ComponentProps<typeof GoodsCard>[] = [
         variants: ["ブラック", "ネイビー", "レッド", "ブラウン"],
     },
     {
-        imageSrc: ["/img/goods/066.webp"],
+        imageSrc: ["/img/thumbs/066.webp"],
         name: "カプセルトイ",
         display_name: (
             <span className="break-keep">
@@ -459,7 +459,7 @@ const GOODS: ComponentProps<typeof GoodsCard>[] = [
         ),
     },
     {
-        imageSrc: ["/img/goods/067_0.webp", "/img/goods/067_1.webp"],
+        imageSrc: ["/img/thumbs/067_0.webp", "/img/thumbs/067_1.webp"],
         name: "サクラサク合格祈願セット",
         price: 550,
         description: (
@@ -471,7 +471,7 @@ const GOODS: ComponentProps<typeof GoodsCard>[] = [
         ),
     },
     {
-        imageSrc: ["/img/goods/068.webp"],
+        imageSrc: ["/img/thumbs/068.webp"],
         name: "灘校煎餅",
         price: 650,
         description: (
@@ -483,7 +483,7 @@ const GOODS: ComponentProps<typeof GoodsCard>[] = [
         ),
     },
     {
-        imageSrc: ["/img/goods/069.webp"],
+        imageSrc: ["/img/thumbs/069.webp"],
         name: "灘校三笠",
         price: 550,
         description: (
@@ -497,7 +497,7 @@ const GOODS: ComponentProps<typeof GoodsCard>[] = [
         ),
     },
     {
-        imageSrc: ["/img/goods/070.webp"],
+        imageSrc: ["/img/thumbs/070.webp"],
         name: "灘校ミント",
         price: 350,
         description: (
@@ -511,7 +511,7 @@ const GOODS: ComponentProps<typeof GoodsCard>[] = [
         ),
     },
     {
-        imageSrc: ["/img/goods/071-072.webp"],
+        imageSrc: ["/img/thumbs/071-072.webp"],
         name: "灘校紅茶",
         price: 1000,
         description: (
@@ -524,7 +524,7 @@ const GOODS: ComponentProps<typeof GoodsCard>[] = [
         variants: ["オレンジアールグレイ", "マスカット"],
     },
     {
-        imageSrc: ["/img/goods/073-074.webp"],
+        imageSrc: ["/img/thumbs/073-074.webp"],
         name: "灘校バームクーヘン",
         price: 1250,
         description: (
