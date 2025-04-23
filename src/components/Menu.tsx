@@ -10,7 +10,7 @@ export const Menu = () => {
     return (
         <div className="flex items-center gap-4">
             <div className="hidden items-center gap-4 md:flex">
-                {/*<Link href="/circle">サークル</Link>*/}
+                <Link href="/circle">サークル</Link>
                 <Link href="/event">イベント</Link>
                 {/*<Link href="/timetable">タイムテーブル</Link>/*}
                 {/*<Link href="/map">マップ</Link>*/}
@@ -31,7 +31,7 @@ export const Menu = () => {
                             </span>
                         </button>
                         <div className="fixed left-0 flex w-screen flex-col border-b border-light-primary bg-background *:p-4 *:text-light-primary dark:border-dark-primary *:dark:text-dark-primary">
-                            {/*<Link href="/circle">サークル</Link>*/}
+                            <Link href="/circle">サークル</Link>
                             <Link href="/event">イベント</Link>
                             {/*<Link href="/timetable">タイムテーブル</Link>/*}
                 {/*<Link href="/map">マップ</Link>*/}
