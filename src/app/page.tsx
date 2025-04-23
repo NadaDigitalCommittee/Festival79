@@ -72,8 +72,8 @@ export default function Home() {
                     <HiMapPin className="mx-2 my-auto text-4xl" />
                     <div className="my-auto text-3xl font-bold">アクセス</div>
                 </h2>
-                <div className="flex gap-2">
-                    <div className="flex size-full flex-col justify-between gap-4 p-4">
+                <div className="flex size-full flex-row gap-2 max-xs:flex-col md:max-lg:flex-col">
+                    <div className="flex size-full min-h-0 min-w-0 flex-col justify-between gap-4 p-4">
                         <section>
                             <h3 className="text-2xl text-light-secondary dark:text-dark-secondary">
                                 灘中学校・灘高等学校
@@ -95,19 +95,25 @@ export default function Home() {
                             ></iframe>
                         </div>
                     </div>
-                    <div className="grid shrink-0 grow-0 grid-rows-6">
-                        <span className="text-xl font-bold">JR住吉駅</span>
-                        <span className="text-xl">
-                            徒歩<span className="font-bold text-theme">10</span>分
-                        </span>
-                        <span className="text-xl font-bold">阪神魚崎駅</span>
-                        <span className="text-xl">
-                            徒歩<span className="font-bold text-theme">10</span>分
-                        </span>
-                        <span className="text-xl font-bold">阪急岡本駅</span>
-                        <span className="text-xl">
-                            徒歩<span className="font-bold text-theme">25</span>分
-                        </span>
+                    <div className="flex shrink-0 grow-0 flex-col justify-start gap-4 break-keep text-xl text-light-primary max-xs:flex-row max-xs:justify-between max-xs:gap-1 max-xs:text-lg md:max-lg:flex-row md:max-lg:justify-between md:max-lg:gap-1 md:max-lg:text-lg dark:text-dark-primary">
+                        <div>
+                            <div className="font-bold">JR住吉駅</div>
+                            <p>
+                                徒歩<span className="mx-1 font-bold text-theme">10</span>分
+                            </p>
+                        </div>
+                        <div>
+                            <div className="font-bold">阪神魚崎駅</div>
+                            <p>
+                                徒歩<span className="mx-1 font-bold text-theme">10</span>分
+                            </p>
+                        </div>
+                        <div>
+                            <div className="font-bold">阪急岡本駅</div>
+                            <p>
+                                徒歩<span className="mx-1 font-bold text-theme">25</span>分
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
