@@ -180,7 +180,7 @@ const EventData: Events = {
             ),
         },
         {
-            name: "color’s",
+            name: "colors'",
             description: (
                 <>
                     唯一の81回生バンド！
