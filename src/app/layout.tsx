@@ -46,7 +46,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
     return (
         <html lang="ja">
             <body
-                className={`${montserrat.variable} ${bizUdpGothic.variable} ${ptSansNarrow.variable} grid min-h-screen grid-cols-1 grid-rows-[auto_1fr_auto] gap-10 font-body antialiased`}
+                className={`${montserrat.variable} ${bizUdpGothic.variable} ${ptSansNarrow.variable} grid min-h-screen grid-cols-1 grid-rows-[auto_1fr_auto] gap-10 font-body text-light-primary antialiased dark:text-dark-primary`}
             >
                 <Header />
                 {children}

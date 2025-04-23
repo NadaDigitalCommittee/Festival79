@@ -28,7 +28,7 @@ export default function Home() {
                 </div>
             </div>
             <div className="col-start-1 col-end-2 flex flex-col justify-between rounded-2xl p-4 dark:bg-zinc-700">
-                <h2 className="flex h-16 flex-row p-2 dark:text-dark-primary">
+                <h2 className="flex h-16 flex-row p-2">
                     <HiCalendarDateRange className="mx-2 my-auto text-4xl" />
                     <div className="my-auto text-3xl font-bold">開催日時</div>
                 </h2>
@@ -68,7 +68,7 @@ export default function Home() {
                 </div>
             </div>
             <div className="col-start-1 col-end-2 flex flex-col rounded-2xl p-4 md:col-start-2 md:col-end-3 dark:bg-zinc-700">
-                <h2 className="flex h-16 flex-row p-2 dark:text-dark-primary">
+                <h2 className="flex h-16 flex-row p-2">
                     <HiMapPin className="mx-2 my-auto text-4xl" />
                     <div className="my-auto text-3xl font-bold">アクセス</div>
                 </h2>
@@ -95,7 +95,7 @@ export default function Home() {
                             ></iframe>
                         </div>
                     </div>
-                    <div className="flex shrink-0 grow-0 flex-col justify-start gap-4 break-keep text-xl text-light-primary max-xs:flex-row max-xs:justify-between max-xs:gap-1 max-xs:text-lg md:max-lg:flex-row md:max-lg:justify-between md:max-lg:gap-1 md:max-lg:text-lg dark:text-dark-primary">
+                    <div className="flex shrink-0 grow-0 flex-col justify-start gap-4 break-keep text-xl max-xs:flex-row max-xs:justify-between max-xs:gap-1 max-xs:text-lg md:max-lg:flex-row md:max-lg:justify-between md:max-lg:gap-1 md:max-lg:text-lg">
                         <div>
                             <div className="font-bold">JR住吉駅</div>
                             <p>

@@ -25,12 +25,10 @@ export const Menu = () => {
                                 setOpen((open) => !open)
                             }}
                         >
-                            <HiXMark className="size-full text-light-primary dark:text-dark-primary" />
-                            <span className="text-sm text-light-primary dark:text-dark-primary">
-                                CLOSE
-                            </span>
+                            <HiXMark className="size-full" />
+                            <span className="text-sm">CLOSE</span>
                         </button>
-                        <div className="fixed left-0 top-16 flex w-screen flex-col border-b border-light-primary bg-background *:p-4 *:text-light-primary dark:border-dark-primary *:dark:text-dark-primary">
+                        <div className="fixed left-0 top-16 flex w-screen flex-col border-b border-light-primary bg-background *:p-4 dark:border-dark-primary">
                             <Link href="/circle">サークル</Link>
                             <Link href="/event">イベント</Link>
                             {/*<Link href="/timetable">タイムテーブル</Link>/*}
@@ -45,10 +43,8 @@ export const Menu = () => {
                             setOpen((open) => !open)
                         }}
                     >
-                        <HiBars3BottomLeft className="size-full text-light-primary dark:text-dark-primary" />
-                        <span className="text-sm text-light-primary dark:text-dark-primary">
-                            MENU
-                        </span>
+                        <HiBars3BottomLeft className="size-full" />
+                        <span className="text-sm">MENU</span>
                     </button>
                 )}
             </div>

@@ -25,19 +25,13 @@ export const CircleList = () => {
                     <li key={circle.name} className="flex flex-col gap-3 p-6">
                         <div className="flex items-center gap-4">
                             <div className="flex size-12 items-center justify-center rounded-md">
-                                <HiHashtag className="size-6 text-light-primary dark:text-dark-primary" />
+                                <HiHashtag className="size-6" />
                             </div>
-                            <span className="text-xl font-bold text-light-primary dark:text-dark-primary">
-                                {circle.name}
-                            </span>
-                            <span className="text-xs text-light-primary dark:text-dark-primary">
-                                by {circle.club}
-                            </span>
+                            <span className="text-xl font-bold">{circle.name}</span>
+                            <span className="text-xs">by {circle.club}</span>
                         </div>
 
-                        <div className="px-4 text-light-primary dark:text-dark-primary">
-                            {circle.description}
-                        </div>
+                        <div className="px-4">{circle.description}</div>
                     </li>
                 )
             })}

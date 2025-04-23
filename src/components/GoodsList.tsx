@@ -574,20 +574,16 @@ const GoodsCard = ({
             <GoodsThumb src={imageSrc} alt={`${name}のサムネイル画像`} />
         </div>
         <div className="flex justify-between">
-            <span className="whitespace-pre-wrap text-xl font-bold text-light-primary dark:text-dark-primary">
+            <span className="whitespace-pre-wrap text-xl font-bold">
                 {display_name ? display_name : name}
             </span>
-            <span className="text-xl font-bold text-light-primary dark:text-dark-primary">
-                ￥{price}
-            </span>
+            <span className="text-xl font-bold">￥{price}</span>
         </div>
         <div className="overflow-hidden">
             <p className="text-light-secondary dark:text-dark-secondary">{description}</p>
         </div>
         <div>
-            {variants && (
-                <span className="font-bold text-light-primary dark:text-dark-primary">種類</span>
-            )}
+            {variants && <span className="font-bold">種類</span>}
             <div className="flex flex-wrap gap-2 overflow-hidden">
                 {variants?.map((v) => (
                     <span

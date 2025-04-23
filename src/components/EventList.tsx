@@ -372,16 +372,12 @@ export const EventList = ({ category }: EventListProp) => {
                                 />
                             ) : (
                                 <div className="flex size-12 items-center justify-center rounded-md">
-                                    <HiHashtag className="size-6 text-light-primary dark:text-dark-primary" />
+                                    <HiHashtag className="size-6" />
                                 </div>
                             )}
-                            <span className="text-xl font-bold text-light-primary dark:text-dark-primary">
-                                {event.name}
-                            </span>
+                            <span className="text-xl font-bold">{event.name}</span>
                         </div>
-                        <div className="px-4 text-light-primary dark:text-dark-primary">
-                            {event.description}
-                        </div>
+                        <div className="px-4">{event.description}</div>
                     </li>
                 )
             })}

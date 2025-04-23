@@ -33,11 +33,9 @@ export const EventDateCounter = () => {
     return (
         <div className="flex items-center">
             {eventNoD == 0 ? (
-                <span className="flex items-center text-xl font-bold dark:text-dark-primary">
-                    本日開催！
-                </span>
+                <span className="flex items-center text-xl font-bold">本日開催！</span>
             ) : (
-                <span className="flex items-center font-bold dark:text-dark-primary">
+                <span className="flex items-center font-bold">
                     <span className="break-keep text-center">
                         <span className="max-[300px]:hidden">開催まで</span>
                         <wbr />
