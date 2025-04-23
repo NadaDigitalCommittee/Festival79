@@ -30,7 +30,7 @@ export const Menu = () => {
                                 CLOSE
                             </span>
                         </button>
-                        <div className="fixed left-0 flex w-screen flex-col border-b border-light-primary bg-background *:p-4 *:text-light-primary dark:border-dark-primary *:dark:text-dark-primary">
+                        <div className="fixed left-0 top-16 flex w-screen flex-col border-b border-light-primary bg-background *:p-4 *:text-light-primary dark:border-dark-primary *:dark:text-dark-primary">
                             <Link href="/circle">サークル</Link>
                             <Link href="/event">イベント</Link>
                             {/*<Link href="/timetable">タイムテーブル</Link>/*}
