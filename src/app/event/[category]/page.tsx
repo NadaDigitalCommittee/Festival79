@@ -1,7 +1,10 @@
 import { EventList, isEventCategory } from "@/components/EventList"
 import { TabButton } from "@/components/TabButton"
 
-export default function Event({ params: { category } }: { params: { category?: string } }) {
+type MaybePromise<T> = T | Promise<T>
+
+export default async function Event({ params }: { params: MaybePromise<{ category?: string }> }) {
+    const { category } = await params
     return (
         <main className="container mx-auto p-4 md:p-10">
             <div className="grid grid-cols-2 gap-2 md:grid-cols-6">
