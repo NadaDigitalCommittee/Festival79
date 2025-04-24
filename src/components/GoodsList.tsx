@@ -579,7 +579,7 @@ const GoodsCard = ({
             </span>
             <span className="text-xl font-bold">￥{price}</span>
         </div>
-        <div className="overflow-hidden">
+        <div>
             <p className="text-light-secondary dark:text-dark-secondary">{description}</p>
         </div>
         <div>
