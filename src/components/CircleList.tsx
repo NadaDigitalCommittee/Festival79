@@ -28,7 +28,9 @@ export const CircleList = () => {
                                 <HiHashtag className="size-6" />
                             </div>
                             <span className="text-xl font-bold">{circle.name}</span>
-                            <span className="text-xs">by {circle.club}</span>
+                            {circle.name !== circle.club && (
+                                <span className="text-xs">by {circle.club}</span>
+                            )}
                         </div>
 
                         <div className="px-4">{circle.description}</div>
