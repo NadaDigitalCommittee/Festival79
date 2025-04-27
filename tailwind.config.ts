@@ -14,6 +14,7 @@ export default {
             colors: {
                 background: "var(--background)",
                 theme: "#e84220",
+                "theme-faint": "color-mix(in srgb, #e84220 20%, #ffffff 80%)",
 
                 light: {
                     primary: "#000000",

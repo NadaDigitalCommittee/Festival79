@@ -2,13 +2,15 @@ import Image from "next/image"
 import type { ComponentProps, ReactNode } from "react"
 import { HiChevronDoubleRight, HiHashtag } from "react-icons/hi2"
 
+import type { EventLocation as EventCategory } from "@/data/event"
+
 type Event = {
     logo?: ComponentProps<typeof Image>["src"]
     name: string
     description: ReactNode
 }
 
-type Events = Record<string, Event[]>
+type Events = Record<EventCategory, Event[]>
 
 const Section = ({ title, children }: { title?: string; children?: ReactNode }) => {
     return (
@@ -22,11 +24,11 @@ const Section = ({ title, children }: { title?: string; children?: ReactNode }) 
     )
 }
 
-const EventData: Events = {
+const EventData = {
     court: [
         {
             logo: undefined,
-            name: "MISS NADA CONTEST",
+            name: "Ms. 灘コンテスト",
             description: (
                 <>
                     最高の美女を決める大人気企画！
@@ -80,7 +82,7 @@ const EventData: Events = {
     ],
     multimedia: [
         {
-            name: "N1グランプリ",
+            name: "N-1 グランプリ 2025",
             description: (
                 <>
                     ボケとツッコミの頂上決戦！知性と笑いの化学反応を見逃すな！
@@ -90,7 +92,7 @@ const EventData: Events = {
             ),
         },
         {
-            name: "IPPON",
+            name: "IPPON グランプリ",
             description: (
                 <>
                     灘生の瞬発力や独創性、いわゆる大喜利力のみを競うシンプルな戦いが今年も開催！
@@ -100,7 +102,7 @@ const EventData: Events = {
             ),
         },
         {
-            name: "格付け",
+            name: "灘校生格付けチェック",
             description: (
                 <>
                     灘校で一番、違いがわかる男は誰だ‼
@@ -192,7 +194,7 @@ const EventData: Events = {
     ],
     hall: [
         {
-            name: "新中1企画 -新入生が語る灘校生活は？",
+            name: "新中一企画 - 新入生が語る灘校生活は？",
             description: (
                 <>
                     部活は？勉強は？灘校の魅力は？
@@ -343,9 +345,8 @@ const EventData: Events = {
             ),
         },
     ],
+    gym: [],
 } satisfies Events
-
-type EventCategory = keyof typeof EventData
 
 export function isEventCategory(v: unknown): v is EventCategory {
     return Object.keys(EventData).indexOf(v as EventCategory) != -1
@@ -358,7 +359,7 @@ type EventListProp = {
 export const EventList = ({ category }: EventListProp) => {
     return (
         <ul className="container mx-auto p-0 sm:p-2 md:p-10">
-            {EventData[category].map((event) => {
+            {EventData[category].map((event: Event) => {
                 return (
                     <li key={event.name} className="flex flex-col gap-3 p-6">
                         <div className="flex items-center gap-4">
