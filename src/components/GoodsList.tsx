@@ -577,7 +577,7 @@ const GoodsCard = ({
             <span className="whitespace-pre-wrap text-xl font-bold">
                 {display_name ? display_name : name}
             </span>
-            <span className="text-xl font-bold">￥{price}</span>
+            <span className="inline-flex items-center text-lg font-bold">￥{price}</span>
         </div>
         <div>
             <p className="text-light-secondary dark:text-dark-secondary">{description}</p>
