@@ -41,7 +41,7 @@ export const EventDateCounter = () => {
                         <wbr />
                         あと
                     </span>
-                    <span className="text-3xl dark:text-theme">{eventNoD}</span>日！
+                    <span className="mx-1 text-3xl dark:text-theme">{eventNoD}</span>日！
                 </span>
             )}
         </div>
