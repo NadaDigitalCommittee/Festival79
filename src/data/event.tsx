@@ -12,7 +12,7 @@ export const eventLocationMap = {
 export type EventLocation = keyof typeof eventLocationMap
 export type EventDay = 0 | 1
 
-export type EventTime = [hour: 9 | 10 | 11 | 12 | 13 | 14 | 15, minute: number]
+export type EventTime = [hour: number, minute: number]
 export interface EventScheduleData {
     title: ReactNode
     subtitle?: ReactNode

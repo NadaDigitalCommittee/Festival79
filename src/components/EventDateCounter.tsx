@@ -3,7 +3,7 @@
 import { useState } from "react"
 import { useInterval } from "usehooks-ts"
 
-const eventDate = Date.parse(new Date("2025-05-02T00:00:00+09:00").toISOString())
+const eventDate = new Date("2025-05-02T00:00:00+09:00").getTime()
 
 /*
 日付試験用ダミー (使うかもしれないので残しておいてください)
