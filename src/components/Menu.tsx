@@ -15,6 +15,7 @@ export const Menu = () => {
                 <Link href="/timetable">タイムテーブル</Link>
                 {/*<Link href="/map">マップ</Link>*/}
                 <Link href="/goods">グッズ</Link>
+                <Link href="/gallery">ダウンロード</Link>
             </div>
             <div className="block select-none md:hidden">
                 {open ? (
@@ -34,6 +35,7 @@ export const Menu = () => {
                             <Link href="/timetable">タイムテーブル</Link>
                             {/*<Link href="/map">マップ</Link>*/}
                             <Link href="/goods">グッズ</Link>
+                            <Link href="/gallery">ダウンロード</Link>
                         </div>
                     </>
                 ) : (
