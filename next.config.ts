@@ -13,6 +13,21 @@ const nextConfig: NextConfig = {
     images: {
         formats: ["image/webp"],
     },
+    // eslint-disable-next-line @typescript-eslint/require-await
+    async headers() {
+        return [
+            {
+                source: "/:all*(pdf)",
+                locale: false,
+                headers: [
+                    {
+                        key: "Content-Type",
+                        value: "application/octet-stream",
+                    },
+                ],
+            },
+        ]
+    },
 }
 
 export default nextConfig
