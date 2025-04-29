@@ -431,21 +431,6 @@ const GOODS: ComponentProps<typeof GoodsCard>[] = [
         ),
     },
     {
-        imageSrc: ["/img/thumbs/062-065.webp"],
-        name: "エコバッグ",
-        price: 600,
-        description: (
-            <>
-                グッズをたくさん買っても大丈夫！
-                <br />
-                普段のお買い物にも使っていただけるエコバッグです♪
-                <br />
-                ブラックとネイビー、レッド、ブラウンの4色がございます。
-            </>
-        ),
-        variants: ["ブラック", "ネイビー", "レッド", "ブラウン"],
-    },
-    {
         imageSrc: ["/img/thumbs/066.webp"],
         name: "カプセルトイ",
         display_name: (
