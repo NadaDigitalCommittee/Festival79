@@ -39,7 +39,7 @@ export default function Download() {
                     <a
                         href={pamphletPath}
                         download="第79回灘校文化祭『weave』 パンフレット.pdf"
-                        className="self-start rounded-md bg-theme px-4 py-2 text-white"
+                        className="self-start rounded-md bg-theme px-4 py-2 text-white shadow-md transition-colors hover:bg-theme/90"
                     >
                         Download ({pamphletFileSize})
                     </a>
