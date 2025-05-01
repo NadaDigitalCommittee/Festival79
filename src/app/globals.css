@@ -15,3 +15,14 @@
 body {
     background: var(--background);
 }
+
+@layer utilities {
+    /* Chromiumを使おう */
+    .interpolate-keywords {
+        interpolate-size: allow-keywords;
+    }
+}
+
+.katex-display {
+    overflow: auto;
+}

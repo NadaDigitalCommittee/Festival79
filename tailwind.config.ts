@@ -1,4 +1,5 @@
-import type { Config } from "tailwindcss"
+import { type Config } from "tailwindcss"
+import type { PluginAPI } from "tailwindcss/types/config"
 
 export default {
     content: [
@@ -102,5 +103,10 @@ export default {
             },
         },
     },
-    plugins: [],
+    plugins: [
+        // eslint-disable-next-line @typescript-eslint/unbound-method
+        ({ addVariant }: PluginAPI) => {
+            addVariant("starting", "@starting-style")
+        },
+    ],
 } satisfies Config
