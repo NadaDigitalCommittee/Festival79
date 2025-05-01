@@ -7,6 +7,9 @@ import { HiBars3BottomLeft, HiXMark } from "react-icons/hi2"
 export const Menu = () => {
     const [open, setOpen] = useState(false)
 
+    const closeMenu = () => {
+        setOpen(false)
+    }
     return (
         <div className="flex items-center gap-4">
             <div className="hidden items-center gap-4 md:flex">
@@ -30,12 +33,22 @@ export const Menu = () => {
                             <span className="text-sm">CLOSE</span>
                         </button>
                         <div className="fixed left-0 top-16 flex w-screen flex-col border-b border-light-primary bg-background *:p-4 dark:border-dark-primary">
-                            <Link href="/circle">サークル</Link>
-                            <Link href="/event">イベント</Link>
-                            <Link href="/timetable">タイムテーブル</Link>
-                            {/*<Link href="/map">マップ</Link>*/}
-                            <Link href="/goods">グッズ</Link>
-                            <Link href="/gallery">ダウンロード</Link>
+                            <Link href="/circle" onClick={closeMenu}>
+                                サークル
+                            </Link>
+                            <Link href="/event" onClick={closeMenu}>
+                                イベント
+                            </Link>
+                            <Link href="/timetable" onClick={closeMenu}>
+                                タイムテーブル
+                            </Link>
+                            {/*<Link href="/map" onClick={closeMenu}>マップ</Link>*/}
+                            <Link href="/goods" onClick={closeMenu}>
+                                グッズ
+                            </Link>
+                            <Link href="/gallery" onClick={closeMenu}>
+                                ダウンロード
+                            </Link>
                         </div>
                     </>
                 ) : (
