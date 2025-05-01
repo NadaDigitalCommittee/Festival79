@@ -1,6 +1,9 @@
 import fs from "node:fs/promises"
 import path from "node:path"
+import { HiExclamationCircle } from "react-icons/hi"
 
+import { KebabMenuIcon } from "@/components/KebabMenuIcon"
+import { MatchUserAgent } from "@/components/MatchUserAgent"
 import { WeaveLogo } from "@/components/WeaveLogo"
 import { WeaveLogotype } from "@/components/WeaveLogotype"
 
@@ -20,13 +23,23 @@ const pamphletFileSize = await calcFileSize(pamphletPath)
 
 export default function Download() {
     return (
-        <main className="container mx-auto p-4 sm:p-10 lg:max-w-lg">
+        <main className="container mx-auto flex flex-col gap-4 p-4 sm:p-10 lg:max-w-lg">
+            <MatchUserAgent regex="Line" flags="i">
+                <div className="flex items-center justify-start gap-2 rounded-lg bg-rose-200 p-4 text-light-primary dark:text-dark-background">
+                    <HiExclamationCircle className="size-6 shrink-0"></HiExclamationCircle>
+                    <p>
+                        LINEアプリ内ブラウザでのファイルのダウンロードはサポートされていません。右下の
+                        <KebabMenuIcon className="my-auto inline size-[1em] align-[-0.1lh]" />
+                        メニューから「デフォルトのブラウザで開く」を選択して、他のブラウザでこのページを開いてください。
+                    </p>
+                </div>
+            </MatchUserAgent>
             <div className="grid grid-cols-1 grid-rows-2 gap-8 p-2 xs:grid-cols-[1fr_2fr] xs:grid-rows-1">
                 <div className="flex max-w-32 flex-col justify-center gap-2 xs:max-w-none">
                     <WeaveLogo className="drop-shadow" />
                     <WeaveLogotype />
                 </div>
-                <div className="flex flex-col justify-between gap-4">
+                <div className="relative flex flex-col justify-between gap-4">
                     <span className="break-keep text-xl font-bold">
                         第79回
                         <wbr />
