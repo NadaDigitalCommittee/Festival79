@@ -38,9 +38,9 @@ export default function PostcardQuestion4() {
                             BP + CR + DR + AP = BQ + CQ + DS + AS
                         `}
                         すなわち，
-                        {$$`
-                            AB + CD = BC + DA \\tag{1}
-                        `}
+                        {$$`\\begin{equation}
+                            AB + CD = BC + DA
+                        \\end{equation}`}
                         が導かれます．
                     </p>
                     <p>

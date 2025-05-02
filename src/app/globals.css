@@ -24,5 +24,10 @@ body {
 }
 
 .katex-display {
-    overflow: auto;
+    overflow: auto hidden;
+}
+
+/* https://github.com/KaTeX/KaTeX/issues/3254 */
+.katex .vlist-t2 {
+    margin-right: 0px !important;
 }
