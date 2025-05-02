@@ -9,7 +9,7 @@ import { RiExpandHeightLine } from "react-icons/ri"
 import { twMerge } from "tailwind-merge"
 
 interface PostcardProps {
-    index: 1 | 2 | 3 | 4 | 5 | 6
+    index?: 1 | 2 | 3 | 4 | 5 | 6
     question: ReactNode
     questionImage?: StaticImport
     explanation: ReactNode
@@ -32,12 +32,16 @@ export function PostcardQuestion({
                         <HiHashtag className="size-6" />
                     </div>
                     <span className="inline-flex gap-2 text-xl font-bold">
-                        問題<span>{index}</span>
+                        問題{index !== undefined && <span>{index}</span>}
                     </span>
                 </h2>
                 {question}
                 {questionImage && (
-                    <Image src={questionImage} alt={`問題${index}の図`} className="mx-auto px-1" />
+                    <Image
+                        src={questionImage}
+                        alt={`問題${index ?? ""}の図`}
+                        className="mx-auto px-1"
+                    />
                 )}
             </section>
             <section className={"flex flex-col gap-4 leading-8"}>
@@ -70,7 +74,7 @@ export function PostcardQuestion({
                     {explanationImage && (
                         <Image
                             src={explanationImage}
-                            alt={`問題${index}の解説の図`}
+                            alt={`問題${index ?? ""}の解説の図`}
                             className="mx-auto px-1"
                         />
                     )}
