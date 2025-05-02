@@ -21,12 +21,14 @@ export function KaTeXMath({
     )
 }
 
-const substitute = (template: TemplateStringsArray, ...substitutions: string[]) =>
-    template.reduce((result, str, i) => result + str + substitutions[i], "")
+type TemplateInterpolatable = string | number | bigint | boolean | null | undefined
 
-export const $ = (template: TemplateStringsArray, ...substitutions: string[]) => (
+const substitute = (template: TemplateStringsArray, ...substitutions: TemplateInterpolatable[]) =>
+    template.reduce((result, str, i) => `${result}${str}${substitutions[i]}`, "")
+
+export const $ = (template: TemplateStringsArray, ...substitutions: TemplateInterpolatable[]) => (
     <KaTeXMath tex={substitute(template, ...substitutions, "")}></KaTeXMath>
 )
-export const $$ = (template: TemplateStringsArray, ...substitutions: string[]) => (
+export const $$ = (template: TemplateStringsArray, ...substitutions: TemplateInterpolatable[]) => (
     <KaTeXMath tex={substitute(template, ...substitutions, "")} displayMode></KaTeXMath>
 )
