@@ -1,5 +1,6 @@
 import { HiCalendarDateRange, HiMapPin } from "react-icons/hi2"
 
+import { EventDateDisplay } from "@/components/EventDateDisplay"
 import { LogoAnimation } from "@/components/LogoAnimation"
 import { WeaveLogotype } from "@/components/WeaveLogotype"
 
@@ -27,45 +28,12 @@ export default function Home() {
                     </section>
                 </div>
             </div>
-            <div className="col-start-1 col-end-2 flex flex-col justify-between rounded-2xl p-4 dark:bg-zinc-700">
+            <div className="relative col-start-1 col-end-2 flex flex-col justify-between rounded-2xl p-4 dark:bg-zinc-700">
                 <h2 className="flex h-16 flex-row p-2">
                     <HiCalendarDateRange className="mx-2 my-auto text-4xl" />
                     <div className="my-auto text-3xl font-bold">開催日時</div>
                 </h2>
-                <div className="flex size-full flex-col justify-between p-4">
-                    <div className="flex h-16 items-center gap-2 font-date md:gap-4 lg:gap-6 dark:text-dark-secondary">
-                        <div className="flex items-center">
-                            <span className="text-5xl tracking-widest">5/2</span>
-                            <span className="text-3xl [text-orientation:sideways] [writing-mode:vertical-rl]">
-                                FRI
-                            </span>
-                        </div>
-                        <span className="text-3xl">-</span>
-                        <div className="flex items-center">
-                            <span className="text-5xl tracking-widest">5/3</span>
-                            <span className="text-3xl [text-orientation:sideways] [writing-mode:vertical-rl]">
-                                SAT
-                            </span>
-                        </div>
-                    </div>
-                    <div className="grid grid-cols-[max-content_1fr] grid-rows-[1fr_1fr_max-content] gap-8">
-                        <div className="col-span-2 grid grid-cols-subgrid items-center gap-8">
-                            <span className="text-right text-2xl font-bold dark:text-dark-secondary">
-                                1日目
-                            </span>
-                            <span className="text-4xl dark:text-dark-secondary">9:00 - 15:30</span>
-                        </div>
-                        <div className="col-span-2 grid grid-cols-subgrid items-center gap-8">
-                            <span className="text-right text-2xl font-bold dark:text-dark-secondary">
-                                2日目
-                            </span>
-                            <span className="text-4xl dark:text-dark-secondary">9:00 - 15:30</span>
-                        </div>
-                    </div>
-                    <p className="col-span-2 text-sm sm:text-base dark:text-dark-secondary">
-                        ※開場時間前のご来場はお控えください
-                    </p>
-                </div>
+                <EventDateDisplay />
             </div>
             <div className="col-start-1 col-end-2 flex flex-col rounded-2xl p-4 md:col-start-2 md:col-end-3 dark:bg-zinc-700">
                 <h2 className="flex h-16 flex-row p-2">
