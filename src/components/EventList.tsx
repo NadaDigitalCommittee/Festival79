@@ -2,7 +2,7 @@ import Image from "next/image"
 import type { ComponentProps, ReactNode } from "react"
 import { HiChevronDoubleRight, HiHashtag } from "react-icons/hi2"
 
-import type { EventLocation as EventCategory } from "@/data/event"
+import type { EventLocation as EventCategory } from "@/data/events"
 
 type Event = {
     logo?: ComponentProps<typeof Image>["src"]
