@@ -18,8 +18,8 @@ const calcFileSize = async (filePath: string) => {
     return formatBytes(stats.size)
 }
 
-const pamphletPath = "/gallery/pamphlet.pdf"
-const pamphletFileSize = await calcFileSize(pamphletPath)
+const brochurePath = "/gallery/brochure.pdf"
+const brochureFileSize = await calcFileSize(brochurePath)
 
 export default function Download() {
     return (
@@ -50,11 +50,11 @@ export default function Download() {
                         パンフレット
                     </span>
                     <a
-                        href={pamphletPath}
+                        href={brochurePath}
                         download="第79回灘校文化祭『weave』 パンフレット.pdf"
                         className="self-start rounded-md bg-theme px-4 py-2 text-white shadow-md transition-colors hover:bg-theme/90"
                     >
-                        Download ({pamphletFileSize})
+                        Download ({brochureFileSize})
                     </a>
                 </div>
             </div>
