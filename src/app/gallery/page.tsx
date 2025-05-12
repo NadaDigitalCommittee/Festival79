@@ -62,6 +62,8 @@ const fileList = await glob
         ).entries(),
     )
 
+const fileDownloadButtonLabel = "ファイルをダウンロード"
+const fileOpenButtonLabel = "ファイルをダウンロードせず別タブで開く"
 const DownloadButton = ({
     href,
     download,
@@ -75,8 +77,8 @@ const DownloadButton = ({
         <a
             href={href}
             download={download}
-            title="ファイルをダウンロード"
-            aria-label="ファイルをダウンロード"
+            title={fileDownloadButtonLabel}
+            aria-label={fileDownloadButtonLabel}
             className="relative inline-flex items-center gap-1 overflow-hidden px-1 py-2 before:absolute before:bottom-0 before:h-[2px] before:w-full before:scale-x-0 before:bg-theme before:transition-transform hover:before:scale-x-100"
         >
             <HiDownload className="size-5 shrink-0" />
@@ -86,8 +88,8 @@ const DownloadButton = ({
             href={href}
             className="grid aspect-square h-full place-content-center rounded-md bg-zinc-400 text-white shadow-md transition-colors dark:bg-zinc-600 hover:dark:bg-zinc-600/90"
             target="_blank"
-            title="ファイルをダウンロードせず別タブで開く"
-            aria-label="ファイルをダウンロードせず別タブで開く"
+            title={fileOpenButtonLabel}
+            aria-label={fileOpenButtonLabel}
             rel="noopener noreferrer"
         >
             <HiExternalLink className="size-5" />
@@ -138,8 +140,8 @@ export default function Download() {
                             href={buildFileHref(brochurePath)}
                             className="grid aspect-square h-full place-content-center rounded-md bg-theme text-white shadow-md transition-colors hover:bg-theme/90"
                             target="_blank"
-                            title="ダウンロードせずファイルを開く"
-                            aria-label="ダウンロードせずファイルを開く"
+                            title={fileOpenButtonLabel}
+                            aria-label={fileOpenButtonLabel}
                             rel="noopener noreferrer"
                         >
                             <HiExternalLink className="size-5" />
