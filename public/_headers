@@ -1,2 +1,2 @@
-/gallery/pamphlet.pdf
+/gallery/**/*.pdf
     Content-Type: application/octet-stream

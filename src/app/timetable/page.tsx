@@ -12,7 +12,7 @@ import {
     type EventTime,
     eventLocationMap,
     eventSchedule,
-} from "@/data/event"
+} from "@/data/events"
 
 const days = [0, 1] as const satisfies EventDay[]
 const daylabels = ["Day 1", "Day 2"]
