@@ -3,11 +3,6 @@ import { BIZ_UDPGothic, Montserrat, PT_Sans_Narrow } from "next/font/google"
 
 import "./globals.css"
 
-import { Footer } from "@/components/Footer"
-import { Header } from "@/components/Header"
-
-// import { Footer } from "@/components/Footer"
-
 const montserrat = Montserrat({
     weight: "variable",
     display: "swap",
@@ -48,9 +43,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
             <body
                 className={`${montserrat.variable} ${bizUdpGothic.variable} ${ptSansNarrow.variable} grid min-h-screen grid-cols-1 grid-rows-[auto_1fr_auto] gap-10 font-body text-light-primary antialiased dark:text-dark-primary`}
             >
-                <Header />
                 {children}
-                <Footer />
             </body>
         </html>
     )
