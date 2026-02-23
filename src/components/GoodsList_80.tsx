@@ -27,8 +27,6 @@ const GOODS: ComponentProps<typeof GoodsCard>[] = [
                 ネイビー地に文化祭ロゴをあしらったトートバッグ。
                 <br />
                 通学や外出にも使いやすく、文化祭の思い出にぴったりです。
-                <br />
-                通学や外出にも使いやすく、文化祭の思い出にぴったりです。
             </>
         ),
     },
@@ -145,7 +143,7 @@ const GOODS: ComponentProps<typeof GoodsCard>[] = [
         price: 500,
         description: (
             <>
-                PILOTの灘校ロゴ入りゲルインキボールペン⭐️
+                PILOTの灘校ロゴ入りゲルインキボールペン。
                 <br />
                 灘校の生徒おすすめ！
                 <br />
@@ -173,9 +171,9 @@ const GOODS: ComponentProps<typeof GoodsCard>[] = [
         price: 200,
         description: (
             <>
-                スリムなフリクションは灘校生にも大人気！何度でも書き消し可能⭐️
+                スリムなフリクションは灘校生にも大人気！何度でも書き消し可能です。
                 <br />
-                利便性が高く細軸でかさばりません❤️
+                利便性が高く細軸でかさばりません！
                 <br />
                 もちろん灘校ロゴ入りです！
             </>
@@ -202,7 +200,7 @@ const GOODS: ComponentProps<typeof GoodsCard>[] = [
         price: 200,
         description: (
             <>
-                毎年大人気の灘校オリジナル付箋です✨
+                毎年大人気の灘校オリジナル付箋です。
                 <br />
                 数量限定、売り切れ御免！
             </>
@@ -330,7 +328,7 @@ const GOODS: ComponentProps<typeof GoodsCard>[] = [
         ),
     },
     {
-        imageSrc: ["/img/thumbs2/055.webp"],
+        imageSrc: ["/img/thumbs2/055_0.webp", "/img/thumbs2/055_1.webp"],
         name: "神戸コーヒー(神戸珈琲)",
         price: 800,
         description: (
@@ -345,7 +343,7 @@ const GOODS: ComponentProps<typeof GoodsCard>[] = [
         variants: ["ハウスブレンド", "クラシックブレンド"],
     },
     {
-        imageSrc: ["/img/thumbs2/057.webp"],
+        imageSrc: ["/img/thumbs2/057_0.webp", "/img/thumbs2/057_1.webp"],
         name: "ホロホロクッキー\n(ショウタニ)",
         price: 1200,
         description: (
@@ -391,7 +389,7 @@ export const GoodsListB = () => (
     <div>
         <div className="mx-auto flex flex-col justify-center p-10">
             <p className="text-2xl font-bold">
-                このページは80回灘校文化祭Weaveのグッズ一覧ページです。
+                このページは80回灘校文化祭Polarisのグッズ一覧ページです。
             </p>
         </div>
         <div className="grid max-w-full grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
@@ -420,7 +418,7 @@ const GoodsCard = ({
     display_name,
 }: GoodsCardProps) => (
     <div className="row-span-4 grid grid-rows-subgrid gap-y-4 p-4">
-        <div className="aspect-video">
+        <div className="aspect-video bg-sky-200">
             <GoodsThumb src={imageSrc} alt={`画像無し`} />
         </div>
         <div className="flex justify-between">
@@ -437,7 +435,7 @@ const GoodsCard = ({
             <div className="flex flex-wrap gap-2 overflow-hidden">
                 {variants?.map((v) => (
                     <span
-                        className="break-keep rounded-lg bg-blue-400 px-2 py-1 text-sm text-light-background dark:text-dark-background"
+                        className="break-keep rounded-lg bg-teal-400 px-2 py-1 text-sm text-light-background dark:text-dark-background"
                         key={`${name}-${v}`}
                     >
                         {v}
