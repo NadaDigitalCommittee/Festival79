@@ -103,17 +103,17 @@ const GOODS: ComponentProps<typeof GoodsCard>[] = [
         price: 1000,
         description: (
             <>
-                柔道着を着たグレーのクマのチャームポイントは水色の足の裏。
+                柔道着を着たグレーのクマ。
                 <br />
-                文化祭開催80回目を記念して、80thのサイン入り！
+                チャームポイントは水色の足の裏。
                 <br />
-                黒とオレンジの2色展開！
+                文化祭開催80回目を記念して、80thの刺繍入り！
             </>
         ),
     },
     {
         imageSrc: ["/img/thumbs2/012.webp"],
-        name: "シマエnada\n(ストラップ付)",
+        name: "シマエNADA\n(ストラップ付)",
         price: 1000,
         description: (
             <>
@@ -263,7 +263,7 @@ const GOODS: ComponentProps<typeof GoodsCard>[] = [
         variants: ["黒", "オレンジ", "黄緑", "青"],
     },
     {
-        imageSrc: ["/img/thumbs/039.webp"],
+        imageSrc: ["/img/thumbs2/039.webp"],
         name: "シャープペン替芯 HB",
         price: 200,
         description: (
@@ -313,7 +313,7 @@ const GOODS: ComponentProps<typeof GoodsCard>[] = [
         ),
     },
     {
-        imageSrc: ["/img/thumbs/043.webp"],
+        imageSrc: ["/img/thumbs2/043.webp"],
         name: "ケース消しゴム",
         price: 250,
         description: (
@@ -326,7 +326,7 @@ const GOODS: ComponentProps<typeof GoodsCard>[] = [
         variants: ["グリーン", "ブルー", "イエロー", "パープル"],
     },
         {
-        imageSrc: ["/img/thumbs/047.webp"],
+        imageSrc: ["/img/thumbs2/047.webp"],
         name: "修正テープ",
         price: 400,
         description: (
@@ -336,7 +336,7 @@ const GOODS: ComponentProps<typeof GoodsCard>[] = [
         ),
     },
         {
-        imageSrc: ["/img/thumbs/048.webp"],
+        imageSrc: ["/img/thumbs2/048.webp"],
         name: "筆箱",
         price: 1300,
         description: (
@@ -350,7 +350,7 @@ const GOODS: ComponentProps<typeof GoodsCard>[] = [
         ),
     },
         {
-        imageSrc: ["/img/thumbs/049.webp"],
+        imageSrc: ["/img/thumbs2/049.webp"],
         name: "ノートB罫",
         price: 250,
         description: (
@@ -362,7 +362,7 @@ const GOODS: ComponentProps<typeof GoodsCard>[] = [
         )
     },
     {
-        imageSrc: ["/img/thumbs/050.webp"],
+        imageSrc: ["/img/thumbs2/050.webp"],
         name: "弁当箱",
         price: 1500,
         description: (
@@ -377,7 +377,7 @@ const GOODS: ComponentProps<typeof GoodsCard>[] = [
         variants: ["黒", "オレンジ"],
     },
     {
-        imageSrc: ["/img/thumbs/052.webp"],
+        imageSrc: ["/img/thumbs2/052.webp"],
         name: "風呂敷",
         price: 1500,
         description: (
@@ -401,7 +401,7 @@ const GOODS: ComponentProps<typeof GoodsCard>[] = [
     //食品企画
     {
         imageSrc: ["/img/thumbs2/054.webp"],
-        name: "灘校カレー(MCC)",
+        name: "灘校カレー(MCC食品)",
         price: 500,
         description: (
             <>
