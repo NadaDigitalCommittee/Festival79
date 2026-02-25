@@ -9,7 +9,7 @@ const GOODS: ComponentProps<typeof GoodsCard>[] = [
         price: 1200,
         description: (
             <>
-                毎年大好評のTシャツ。
+                毎年大好評の文化祭ロゴTシャツ。
                 <br />
                 文化祭ロゴ入りで、黒・白の2色展開です。
                 <br />
@@ -263,6 +263,18 @@ const GOODS: ComponentProps<typeof GoodsCard>[] = [
         variants: ["黒", "オレンジ", "黄緑", "青"],
     },
     {
+        imageSrc: ["/img/thumbs/039.webp"],
+        name: "シャープペン替芯 HB",
+        price: 200,
+        description: (
+            <>
+                シャーペンの替え芯です。
+                <br />
+                ケースには本校の校章のデザイン入り！
+            </>
+        )
+    },
+    {
         imageSrc: ["/img/thumbs2/040.webp"],
         name: "蛍光ペン3本組\n灘校章ケース入",
         price: 400,
@@ -297,6 +309,80 @@ const GOODS: ComponentProps<typeof GoodsCard>[] = [
                 鉛筆の6本セットです。
                 <br />
                 校章と学校名が金色で印字されています♪
+            </>
+        ),
+    },
+    {
+        imageSrc: ["/img/thumbs/043.webp"],
+        name: "ケース消しゴム",
+        price: 250,
+        description: (
+            <>
+                ケースに入っていて、回すだけで出てくる！
+                <br />
+                六角形状で手にフィットしてとても使いやすい消しゴムです。
+            </>
+        ),
+        variants: ["グリーン", "ブルー", "イエロー", "パープル"],
+    },
+        {
+        imageSrc: ["/img/thumbs/047.webp"],
+        name: "修正テープ",
+        price: 400,
+        description: (
+            <>
+                シンプルなデザインで詰め替えも可能なので、長く使っていただけます。
+            </>
+        ),
+    },
+        {
+        imageSrc: ["/img/thumbs/048.webp"],
+        name: "筆箱",
+        price: 1300,
+        description: (
+            <>
+                生徒デザインの筆箱♪
+                <br />
+                チャックで開け閉めできてポケットもたくさんある大容量サイズ！
+                <br />
+                グッズの定規やシャーペンと合わせていかがですか？
+            </>
+        ),
+    },
+        {
+        imageSrc: ["/img/thumbs/049.webp"],
+        name: "ノートB罫",
+        price: 250,
+        description: (
+            <>
+                使いやすい大学ノート！
+                <br />
+                表紙には校章などがデザインされています♪
+            </>
+        )
+    },
+    {
+        imageSrc: ["/img/thumbs/050.webp"],
+        name: "弁当箱",
+        price: 1500,
+        description: (
+            <>
+                惜しまれつつも2024年度で退任された本校書道教諭、倉橋奇艸先生が書かれた「灘」の文字と矢絣模様が描かれた生徒デザインのお弁当箱です。
+                <br />
+                黒とオレンジの2色展開！
+                <br />
+                中にはしきりも入っています。
+            </>
+        ),
+        variants: ["黒", "オレンジ"],
+    },
+    {
+        imageSrc: ["/img/thumbs/052.webp"],
+        name: "風呂敷",
+        price: 1500,
+        description: (
+            <>
+                京都の染めの老舗「四季彩」の特製で、紺色の生地に白で校名と校歌の歌詞が書かれています！
             </>
         ),
     },
