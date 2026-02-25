@@ -272,7 +272,7 @@ const GOODS: ComponentProps<typeof GoodsCard>[] = [
                 <br />
                 ケースには本校の校章のデザイン入り！
             </>
-        )
+        ),
     },
     {
         imageSrc: ["/img/thumbs2/040.webp"],
@@ -325,17 +325,13 @@ const GOODS: ComponentProps<typeof GoodsCard>[] = [
         ),
         variants: ["グリーン", "ブルー", "イエロー", "パープル"],
     },
-        {
+    {
         imageSrc: ["/img/thumbs2/047.webp"],
         name: "修正テープ",
         price: 400,
-        description: (
-            <>
-                シンプルなデザインで詰め替えも可能なので、長く使っていただけます。
-            </>
-        ),
+        description: <>シンプルなデザインで詰め替えも可能なので、長く使っていただけます。</>,
     },
-        {
+    {
         imageSrc: ["/img/thumbs2/048.webp"],
         name: "筆箱",
         price: 1300,
@@ -349,7 +345,7 @@ const GOODS: ComponentProps<typeof GoodsCard>[] = [
             </>
         ),
     },
-        {
+    {
         imageSrc: ["/img/thumbs2/049.webp"],
         name: "ノートB罫",
         price: 250,
@@ -359,7 +355,7 @@ const GOODS: ComponentProps<typeof GoodsCard>[] = [
                 <br />
                 表紙には校章などがデザインされています♪
             </>
-        )
+        ),
     },
     {
         imageSrc: ["/img/thumbs2/050.webp"],
@@ -429,7 +425,7 @@ const GOODS: ComponentProps<typeof GoodsCard>[] = [
         variants: ["ハウスブレンド", "クラシックブレンド"],
     },
     {
-        imageSrc: ["/img/thumbs2/057_0.webp", "/img/thumbs2/057_1.webp"],
+        imageSrc: ["/img/thumbs2/057.webp"],
         name: "ホロホロクッキー\n(ショウタニ)",
         price: 1200,
         description: (
@@ -475,7 +471,7 @@ export const GoodsListB = () => (
     <div>
         <div className="mx-auto flex flex-col justify-center p-10">
             <p className="text-2xl font-bold">
-                このページは80回灘校文化祭Polarisのグッズ一覧ページです。
+                このページは第80回灘校文化祭Polarisのグッズ一覧ページです。
             </p>
         </div>
         <div className="grid max-w-full grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
