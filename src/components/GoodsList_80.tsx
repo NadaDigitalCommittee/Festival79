@@ -388,7 +388,7 @@ const GOODS: ComponentProps<typeof GoodsCard>[] = [
         price: 300,
         description: (
             <>
-                灘中・高の校章と、本校の校是である「精力善用 自他共栄」が描かれた手拭いです。
+                灘中・高の校章と、本校の校是である「精力善用 自他共栄」が描かれた手ぬぐいです。
                 <br />
                 これから暑くなる季節にぜひいかがですか？
             </>
@@ -397,7 +397,7 @@ const GOODS: ComponentProps<typeof GoodsCard>[] = [
     //食品企画
     {
         imageSrc: ["/img/thumbs2/054.webp"],
-        name: "灘校カレー(MCC食品)",
+        name: "灘校カレー\n(MCC食品)",
         price: 500,
         description: (
             <>
@@ -411,7 +411,7 @@ const GOODS: ComponentProps<typeof GoodsCard>[] = [
     },
     {
         imageSrc: ["/img/thumbs2/055_0.webp", "/img/thumbs2/055_1.webp"],
-        name: "神戸コーヒー(神戸珈琲)",
+        name: "神戸コーヒー\n(神戸珈琲)",
         price: 800,
         description: (
             <>
