@@ -238,7 +238,7 @@ const GOODS: ComponentProps<typeof GoodsCard>[] = [
     },
     {
         imageSrc: ["/img/thumbs2/031.webp"],
-        name: "ユニアルファンゲル",
+        name: "ユニアルファゲル",
         price: 500,
         description: (
             <>
